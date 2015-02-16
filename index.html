@@ -1,0 +1,571 @@
+<!--IAT 339, D101, Jessica Kuk, 301139384-->
+
+<!DOCTYPE html>
+<html>
+
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Style Guide for Thoughts On</title>
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <styleGuideNavBar>
+      <h1>Style Guide for Thoughts On</h1>
+      <p>This style guide will help consolidate front-end code and document the visual language for the digital branding of Thoughts On. </p>
+      <nav>
+        <ul>
+          <li><a href="#colors">COLORS</a></li>
+          <li><a href="#text">TEXT</a></li>
+          <li><a href="#lines">LINES</a></li>
+          <li><a href="#buttons">BUTTONS</a></li>
+          <li><a href="#forms">FORMS</a></li>
+          <li><a href="#keygroupings">KEY GROUPINGS</a></li>
+          <li><a href="#images">IMAGES</a></li>
+        </ul> 
+      </nav>
+    </styleGuideNavBar>
+
+      <div class="styleguidelines">
+        <div class="colorsection">
+          <section id="colors">
+            <h2>Color Palette</h2>
+            <p>Thoughts On's primary palette contains fallen, muted colors.</p>
+            
+            <div id="blue-rectangle"><p>#D2E7DD</p></div>
+            <div id="beige-rectangle"><p>#CDC5C1</p></div>
+            <div id="salmon-rectangle"><p>#BE7684</p></div>
+            <div id="lavender-rectangle"><p>#A18BA4</p></div>
+            <div id="purple-rectangle"><p>#5E3149</p></div>
+          </section>
+        </div>
+
+      <!--TEXT-->
+      <div class="textsection">
+        <hr> 
+        <section id="text">
+          <h2>Textual Element Style</h2>
+          <p>Thoughts On will use two typography types: Josefin Slab and Roboto Condensed. Generally speaking, Josefin Slab will be used for headings and Roboto Condensed will be used for body texts.</p>
+
+          <h3>CSS selector:</h3>
+          <p>'h1' , 'h2' , 'h3' , 'p' , 'a'</p>
+          
+          <h3>Sample code:</h3>
+          <code>&lt;h1&gt;Ready Made Products&lt;/h1&gt;</code>
+          <code>&lt;h2&gt;Cheers Wine Glass&lt;/h2&gt;</code>
+          <code>&lt;h3&gt;Inpire, Express, Craft&lt;/h3&gt;</code>
+          <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+          <code>&lt;a href="#"&gt;This is a link.&lt;/a&gt;</code>
+          
+          <h3>Rendered element:</h3>
+            <div class="item-example">
+              <h1>Header Level 1
+               <span class="type-label">36px</span>
+              </h1>
+              <h4>Header Level 2
+                <span class="type-label">22px</span>
+              </h4>
+              <h3>Header Level 3 (Tagline)
+                <span class="type-label">18px</span>
+              </h3>
+              <p>This is what a paragraph looks like. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor est. 
+                <span class="type-label">14px</span></p>
+                <p> <a href="#">This is a link</a>
+                <span class="type-label">14px</span>
+              </p>
+            </div>
+          <hr>
+        </section>
+      </div>
+
+
+      <!-- LINES-->
+      <div class="linesection">
+        <section id="lines">
+          <h2>Lines Style</h2>
+          <p>There are two different types of lines used: solid and dotted.</p>
+          
+          <h3>CSS selector:</h3>
+          <p>'hr' , '.dotted-line hr'</p>
+          
+          <h3>Sample code:</h3>
+          <code>&lt;hr&gt;</code>
+          
+          <h3>Rendered element:</h3>
+          <div class="rendered-solid-lines"><hr></div>
+          <div class="rendered-dotted-lines"><hr></div>
+          <hr>
+        </section>
+      </div>
+
+
+      <!-- BUTTONS-->
+      <div class="buttonsection">
+        <section id="buttons">
+          <h2>Buttons Style</h2>
+
+           <!-- BUTTONS: DEFAULT-->
+          <p>There are two button types. This first kind is rectangular and when pressed, the state of the button changes from a hollow, outlined state to a solid fill in. <br>The second type are left and right arrowed buttons used to go through product images in the detailed product view page.</p>
+          
+          <h3>CSS selector:</h3>
+          <p>'a.button' , 'a.button:hover' , 'a.button:focus' , 'a.round-button' , 'a.round-button:hover' , 'a.round-button:focus'</p>
+          
+          <h3>Sample code:</h3>
+          <code>&lt;a class="button" href="#"&gt;SEE MORE&lt;/a&gt;</code>
+          <h3>Rendered element:</h3>
+          <a class="button" href="#">DEFAULT BUTTON</a>
+          <a class="round-button" href="#">&lt;</a>
+          <a class="round-button" href="#">&gt;</a>
+
+          <div id="dotted-separation-lines"><hr></div>
+
+          <!-- BUTTONS: DROP DOWN-->
+          <p>There are also drop down menus utilized in the website.</p>
+          
+          <h3>CSS selector:</h3>
+          <p>'form' , 'input' , '.input-wrapper' , 'select', 'label'</p>
+          
+          <h3>Sample code:</h3>
+          <code>&lt;div class="input-wrapper"&gt;
+              <p> &lt;label for="form-country"&gt;Country:&lt;/label&gt;</p>
+              <p>&lt;select&gt; </p>
+              <p>&lt;option value="Andorra"&gt;Andorra&gt;&lt;/option&gt;</p>
+              <p>&lt;option value="Afghanistan"&gt;Afghanistan&gt;&lt;/option&gt;</p>
+              <p>&lt;option value="Argentina"&gt;Argentina&gt;&lt;/option&gt;</p>
+              <p>&lt;/select&gt;</p>
+              &lt;/div&gt;
+            </code>
+          
+          <h3>Rendered element:</h3>
+            <div class="input-wrapper">
+              <label for="form-country">Country:</label>
+                <select>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Afghanistan">Afghanistan</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Canada">Canada</option>
+                  <option value="China">China</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Costa Rica">Costa Rica</option>
+                  <option value="Czech Republic">Czech Republic</option>
+                  <option value="Germany">Germany</option>
+                </select>
+            </div>
+          <hr>
+        </section>
+       </div>
+
+
+      <!--FORMS TV AND DESKTOP-->
+      <div class="formssection">
+        <section id="forms">
+          <h2>Forms Style</h2>
+          <p>Forms are used when users going through the purchase process and have to enter their shipping and billing info.</p>
+          
+          <h3>CSS selector:</h3>
+          <p>'form' , 'input' , '.input-wrapper' , '.check-boxes input' , 'select', 'label'</p>
+          
+          <h3>Sample code:</h3>
+            <code>&lt;section id="forms"&gt;
+              <p>...</p>
+              &lt;/form&gt;</code>
+            <code>&lt;input type="checkbox" name="same-billing-info" value="same-billing-info"&gt;</code>
+            <code>&lt;div class="input-wrapper"&gt;
+              <p> &lt;label for="form-fname"&gt;First Name:&lt;/label&gt;</p>
+              <p>&lt;input type="text" id="form-fname" placeholder="Jane"&gt; </p>
+              &lt;/div&gt;
+            </code>
+            <code>&lt;div class="input-wrapper"&gt;
+              <p> &lt;label for="form-country"&gt;Country:&lt;/label&gt;</p>
+              <p>&lt;select&gt; </p>
+              <p>&lt;option value="Andorra"&gt;Andorra&gt;&lt;/option&gt;</p>
+              <p>&lt;option value="Afghanistan"&gt;Afghanistan&gt;&lt;/option&gt;</p>
+              <p>&lt;option value="Argentina"&gt;Argentina&gt;&lt;/option&gt;</p>
+              <p>&lt;/select&gt;</p>
+              &lt;/div&gt;
+            </code>
+          
+          <h3>Rendered element:</h3>
+          <p>As an example, this is what the second part of the 'billing info' form looks like on a TV and desktop display.</p>
+
+          <div class="form-example">
+            <form method="post" action="#">
+
+            <div class="check-boxes">
+              <input type="checkbox" name="same-billing-info" value="same-billing-info" checked><strong>MY BILLING & SHIPPING ADDRESSES ARE THE SAME</strong><br>
+            </div>
+          
+            <div class="form-left-element">
+              <div class="input-wrapper">
+                <label for="form-fname">First Name:</label>
+                <input type="text" id="form-fname" placeholder="Jane">
+              </div>
+            </div>
+
+              <div class="input-wrapper">
+                <label for="form-lname">Last Name:</label>
+                <input type="text" id="form-lname" placeholder="Doe">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="form-address">Address:</label>
+                <input type="text" id="form-address" placeholder="2130 Madison St.">
+              </div>
+
+            <div class="form-left-element">
+              <div class="input-wrapper">
+                <label for="form-city">City:</label>
+                <input type="text" id="form-city" placeholder="Burnaby">
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="form-zipcode">Zipcode:</label>
+              <input type="text" id="form-zipcode" placeholder="V5F 6T7">
+            </div>
+
+            <div class="form-left-element">
+              <div class="input-wrapper">
+                <label for="form-country">Country:</label>
+                <select>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Afghanistan">Afghanistan</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Canada">Canada</option>
+                  <option value="China">China</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Costa Rica">Costa Rica</option>
+                  <option value="Czech Republic">Czech Republic</option>
+                  <option value="Germany">Germany</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="form-province">State:</label>
+                <select>
+                  <option value="Alberta">Alberta</option>
+                  <option value="British Columbia"> British Columbia</option>
+                  <option value="Manitoba">Manitoba</option>
+                  <option value="New Brunswick">New Brunswick</option>
+                  <option value="Newfoundland and Labrador  ">Newfoundland and Labrador </option>
+                  <option value="Northwest Territories">Northwest Territories</option>
+                  <option value="Nova Scotia">Nova Scotia</option>
+                  <option value="Nunavut"> Nunavut</option>
+                  <option value="Ontario">Ontario</option>
+                  <option value="Prince Edward Island">Prince Edward Island</option>
+                  <option value="Quebec">Quebec</option>
+                  <option value="Saskatchewan">Saskatchewan</option>
+                  <option value="Yukon">Yukon</option>
+                </select>
+              </div>
+
+              <div class="input-wrapper">
+                <a class="button" href="#">PLACE ORDER NOW</a>
+              </div>
+
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <!--FORMS PHONE-->
+      <div class="formssection">
+        <section id="forms">
+          <p>As an example, this is what the second part of the 'billing info' form looks like on a mobile phone display.</p>
+
+          <div class="form-example-two">
+            <form method="post" action="#">
+
+            <div class="check-boxes">
+              <input type="checkbox" name="same-billing-info" value="same-billing-info"checked><strong>MY BILLING & SHIPPING ADDRESSES ARE THE SAME</strong><br>
+            </div>
+          
+              <div class="input-wrapper">
+                <label for="form-fname">First Name:</label>
+                <input type="text" id="form-fname" placeholder="Jane">
+              </div>
+            
+              <div class="input-wrapper">
+                <label for="form-lname">Last Name:</label>
+                <input type="text" id="form-lname" placeholder="Doe">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="form-address2">Address:</label>
+                <input type="text" id="form-address2" placeholder="2130 Madison St.">
+              </div>
+
+            <div class="form-left-element">
+              <div class="input-wrapper">
+                <label for="form-city">City:</label>
+                <input type="text" id="form-city" placeholder="Burnaby">
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="form-zipcode">Zipcode:</label>
+              <input type="text" id="form-zipcode" placeholder="V5F 6T7">
+            </div>
+
+          
+              <div class="input-wrapper">
+                <label for="form-country2">Country:</label>
+                <div class ="dropdown-two">
+                <select>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Afghanistan">Afghanistan</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Canada">Canada</option>
+                  <option value="China">China</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Costa Rica">Costa Rica</option>
+                  <option value="Czech Republic">Czech Republic</option>
+                  <option value="Germany">Germany</option>
+                </select>
+              </div>
+             
+            </div>
+
+            <div class="input-wrapper">
+                <label for="form-province2">State:</label>
+                <select>
+                  <option value="Alberta">Alberta</option>
+                  <option value="British Columbia"> British Columbia</option>
+                  <option value="Manitoba">Manitoba</option>
+                  <option value="New Brunswick">New Brunswick</option>
+                  <option value="Newfoundland and Labrador  ">Newfoundland and Labrador </option>
+                  <option value="Northwest Territories">Northwest Territories</option>
+                  <option value="Nova Scotia">Nova Scotia</option>
+                  <option value="Nunavut"> Nunavut</option>
+                  <option value="Ontario">Ontario</option>
+                  <option value="Prince Edward Island">Prince Edward Island</option>
+                  <option value="Quebec">Quebec</option>
+                  <option value="Saskatchewan">Saskatchewan</option>
+                  <option value="Yukon">Yukon</option>
+                </select>
+              </div>
+              <div class="input-wrapper">
+                <a class="button" href="#">PLACE ORDER NOW</a>
+              </div>
+            </form>
+          </div>
+          <hr>
+        </section>
+      </div>
+
+      <!-- KEY GROUPINGS-->
+      <div class="keygroupingsection">
+        <section id="keygroupings">
+          <h2>Key Grouping Element Examples</h2>
+
+          <!-- KEY GROUPINGS: NAV BAR-->
+          <p>As an example, this is what the <strong>navigation bar</strong> would look like on Thoughts On's website.</p>
+          
+          <h3>CSS selector:</h3>
+          <p>'nav' , 'nav a' , 'nav a:hover' , 'nav a:active' ,  'nav li img' , 'nav li img:hover' , '.navbar-icons-group' , '.nav-icons' </p>
+          
+          <h3>Sample code:</h3>
+          <code>&lt;ul&gt;
+            <p>&lt;li&gt;&lt;a href="#who-are-we"&gt;WHO ARE WE?&lt;/a&gt;&lt;/li&gt;</p>
+            <p>&lt;li&gt;&lt;a href="#ready-mades"&gt;READY MADES&lt;/a&gt;&lt;/li&gt;</p> &lt;/ul&gt;</code>
+          <code>&lt;div class="navbar-icons-group"&gt;
+            <p>&lt;a href="#keygroupings" class="nav-icons"&gt;</p>
+            <p>&lt;img src="images/shoppingbag.png"height="32" width="32" alt="shopping icon placeholder"&gt;&lt;/a&gt;</p>
+            &lt;/div&gt;</code>
+          
+          <h3>Rendered element:</h3>
+          <exampleNavBar>
+            <nav>
+              <ul>
+                <li><a href ="#keygroupings"><img src="images/logo.png" height="50" width="100" alt="logo placeholder"></a></li>
+                <li><a href="#keygroupings">WHO ARE WE?</a></li>
+                <li><a href="#keygroupings">READY MADES</a></li>
+                <li><a href="#keygroupings">CUSTOMIZE</a></li>
+                <li><a href="#keygroupings">FAQ</a></li>
+                <li>
+                  <div class="navbar-icons-group">
+                    <a href="#keygroupings" class="nav-icons"><img src="images/shoppingbag.png"height="32" width="32" alt="shopping icon placeholder"></a>
+                   <a href="https://facebook.com" class="nav-icons"><img src="images/facebook.png"height="32" width="32" alt="facebook icon placeholder"></a>
+                   <a href="https://twitter.com" class="nav-icons"><img src="images/twitter.png"height="32" width="32" alt="twitter icon placeholder"></a>
+                   <a href="https://pinterest.com" class="nav-icons"><img src="images/pinterest.png"height="32" width="32" alt="pinterest icon placeholder"></a>
+                  </div>
+                </li>
+              </ul> 
+            </nav>
+          </exampleNavBar>
+
+          <div id="dotted-separation-lines"><hr></div>
+
+          <!-- KEY GROUPINGS: GROUP OF TEXT-->
+          <p>As an example, this is what the <strong>a group of texts</strong> would look like on Thoughts On's website.</p>
+          
+          <h3>CSS selector:</h3>
+          <p>'h1' , 'h3' , 'p' , 'a.button' , 'a.button:hover' , 'a.button:focus' </p>
+          
+          <h3>Sample code:</h3>
+            <code>&lt;h1&gt;WHO ARE WE?&lt;/h1&gt;</code>
+            <code>&lt;h3&gt;2013&lt;/h3&gt;</code>
+            <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+            <code>&lt;a class="button" href="#"&gt;SEE MORE&lt;/a&gt;</code>
+          
+          <h3>Rendered element:</h3>
+          <exampletextGroup>
+            <div class="text-group-example">
+              <h1>WHO ARE WE?</h1>
+              <div class="solid-lines-text-body"><hr></div>
+              <h3>2013</h3>
+              <p>Thoughts On is a customized novelty crafting company with a passion for typography and design on various mediums. Whether it’s etching on glass, painting on canvases or stenciling cards, they work with individuals from start to finish to design and create handmade products that are inspired by people’s thoughts.</p>
+              <h4>&#9993; &nbsp; info@thoughtson.ca</h4>
+              <a class="button" href="#">FIND OUT MORE</a>
+            </div>
+          </exampletextGroup>
+
+          <div id="dotted-separation-lines"><hr></div>
+
+          <!-- KEY GROUPINGS: PRODUCT LISTING-->
+          <p>As an example, this is what the <strong>product listing elements</strong> would look like on Thoughts On's website.</p>
+          
+          <h3>CSS selector:</h3>
+          <p>'h3' , 'img' , 'img a' , 'img a:hover' , 'img a:active'</p>
+          <h3>Sample code:</h3>
+            <code>&lt;div class="product-listing"&gt;
+              <p>&lt;a href ="#"&gt;</p>
+                <p>&lt;images/product-listing-placeholder.png"height="100" width="160" alt="product image placeholder"&gt;</p>
+              <p>&lt;/a&gt;</p>
+            &lt;/div&gt;
+          </code>
+          <code>&lt;div class="descriptions"&gt;
+            <p>&lt;h3&gt;&lt;strong&gt;PRODUCT NAME&lt;/strong&gt;&lt;br&gt;$$$&lt;/h3&gt;</p>
+            &lt;/div&gt;
+          </code>
+          <code>&lt;div class="view-details-button"&gt;
+            <p>&lt;a class="button" href="#"&gt;VIEW DETAILS&lt;&gt;</p>
+            &lt;/div&gt;
+          </code>
+          
+          <h3>Rendered element:</h3>
+          <exampleProductListing>
+            <div class="product-listing-example">
+              <a href ="#"><img src="images/product-listing-placeholder.png"height="130" width="168" alt="product listing image placeholder"></a>
+              <a href ="#"><img src="images/product-listing-placeholder.png"height="130" width="168" alt="product listing image placeholder"></a>
+              <a href ="#"><img src="images/product-listing-placeholder.png"height="130" width="168" alt="product listing image placeholder"></a>
+              <a href ="#"><img src="images/product-listing-placeholder.png"height="130" width="168" alt="product listing image placeholder"></a>
+              
+              <div class="descriptions">
+                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
+                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
+                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
+                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
+              </div>
+
+              <div class="view-details-button">
+                <a class="button" href="#">VIEW DETAILS</a>
+                <a class="button" href="#">VIEW DETAILS</a>
+                <a class="button" href="#">VIEW DETAILS</a>
+                <a class="button" href="#">VIEW DETAILS</a>
+              </div>
+
+               <a href ="#"><img src="images/product-listing-placeholder.png"height="130" width="168" alt="product listing image placeholder"></a>
+              <a href ="#"><img src="images/product-listing-placeholder.png"height="130" width="168" alt="product listing image placeholder"></a>
+              <a href ="#"><img src="images/product-listing-placeholder.png"height="130" width="168" alt="product listing image placeholder"></a>
+              <a href ="#"><img src="images/product-listing-placeholder.png"height="130" width="168" alt="product listing image placeholder"></a>
+              
+              <div class="descriptions">
+                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
+                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
+                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
+                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
+              </div>
+
+              <div class="view-details-button">
+                <a class="button" href="#">VIEW DETAILS</a>
+                <a class="button" href="#">VIEW DETAILS</a>
+                <a class="button" href="#">VIEW DETAILS</a>
+                <a class="button" href="#">VIEW DETAILS</a>
+              </div>
+            </div>
+
+
+          </exampleProductListing>
+
+          <div id="dotted-separation-lines"><hr></div>
+
+          <!-- KEY GROUPINGS: CHECK OUT PROCESS INDICATOR-->
+          <p>As an example, this is what the <strong>checkout process bar</strong> would look like on Thoughts On's website.</p>
+          
+          <h3>CSS selector:</h3>
+          <p>'#shipping-info' , '#billing-info' , '#complete' , 'h3' </p>
+          <h3>Sample code:</h3>
+            <code>&lt;div id="shipping-info"&gt;&lt;h3&gt;&lt;strong&gt;1. BILLING INFO &lt;/strong&gt;&lt;/h3&gt;&lt;/div&gt;</code>
+          
+          <h3>Rendered element:</h3>
+          <exampleCheckoutProcessBar>
+              <div id="shipping-info"><h3><strong>1. SHIPPING INFO</strong></h3></div>
+              <div id="billing-info"><h3><strong>2. BILLING INFO</strong></h3></div>
+              <div id="complete"><h3><strong>3. COMPLETE</strong></h3></div>
+          </exampleCheckoutProcessBar>
+          <hr>
+        </section>
+       </div>
+
+
+      <!-- IMAGES-->
+      <div class="imagessection">
+        <section id="images">
+          <h2>Image Elements Style</h2>
+
+          <!-- IMAGES:ICONS-->
+          <p>Icons will be bounded by circles.</p>
+          
+          <h3>CSS selector:</h3>
+          <p>'li img' , 'li img:hover' , '.navbar-icons-group' , '.nav-icons'</p>
+          
+          <h3>Sample code:</h3>
+          <code>&lt;div class="icons-example"&gt;
+            <p>img src="images/shoppingbag-example.png"height="70" width="70" alt="shopping icon placeholder"&gt;</p>
+            &lt;/div&gt;
+          </code>
+          
+          <h3>Rendered element:</h3>
+            <div class="icons-example">
+              <img src="images/shoppingbag-example.png"height="70" width="70" alt="shopping icon placeholder">
+              <img src="images/facebook-example.png"height="70" width="70" alt="facebook icon placeholder">
+              <img src="images/twitter-example.png"height="70" width="70" alt="twitter icon placeholder">
+              <img src="images/pinterest-example.png"height="70" width="70" alt="pinterest icon placeholder">
+            </div>
+          <div id="dotted-separation-lines"><hr></div>
+
+          <!-- IMAGES:PICS-->
+          <p>Images (product listing and othes) will be borderless and have right angled corners. Background images with a text overlay with be set at 30% opacity</p>
+          
+          <h3>CSS selector:</h3>
+          <p>'.product-image img'</p>
+          
+          <h3>Sample code:</h3>
+          <code>&lt;div class="product-image"&gt;
+            <p>img src="images/product-image.jpg"height="384" width="400" alt="etched glass image placeholder"&gt;</p>
+            &lt;/div&gt;
+          </code>
+          
+          <h3>Rendered element:</h3>
+            <div class="product-image">
+              <img src="images/product-image.jpg"height="384.5" width="400" alt="etched glass image placeholder">
+            </div>
+          <hr>
+        </section>
+       </div> 
+
+       <p>IAT 339 || D101 || Jessica Kuk || 301139384 || </p>
+    </div>
+  </body>
+</html>
