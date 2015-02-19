@@ -1,0 +1,40 @@
+/*grid stylesheet*/
+
+*,*::after,*::before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizig: border-box;
+}
+
+
+[class^='col-'] {/*anything with col will take on these properties*/
+	float:left;
+	padding:0;
+	text-align:center;
+}
+
+
+.col-2of10{
+	width:20%;
+}
+
+@media (max-width:55em){
+	.col-2of10{
+		width:100%;
+	}
+
+	.nav-icons-group{
+		margin-left: auto;
+    	margin-right: auto;
+    	width:50%;
+	}
+}
+
+.grid{
+	/*include these 3 codes in ur css as a safety mechanism*/
+	content: "";
+	display:block;
+	clear:both;
+}
+
+
