@@ -31,8 +31,17 @@ header a:hover{
   color:#BE7684;
 }
 
-header a:active{
-  color:#5E3149;
+
+a.menu-item-selected{
+  text-decoration: underline;
+}
+
+.nav-icons, .nav-icons-selected{
+  float:left;
+  width:10%;
+  margin-top:1.8em;
+  margin-right:1.4em;
+  padding-top:0;
 }
 
 
@@ -40,13 +49,7 @@ header a:active{
   opacity: 0.3;
 }
 
-.nav-icons{
-  float:left;
-  width:10%;
-  margin-top:1.8em;
-  margin-right:1.4em;
-  padding-top:0;
-}
+
 
 .logo{
   font-family: 'Gravitas One';
