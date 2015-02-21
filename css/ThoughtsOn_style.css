@@ -1,5 +1,7 @@
 /*style stylesheet*/
 
+/* General stlying*/
+
 body, nav a{
   font-family: 'Roboto Condensed' sans-serif;
   font-size: 14px;
@@ -7,6 +9,55 @@ body, nav a{
   padding: 1rem;
   background: #CDC5C1;
 }
+
+h1{
+  font-family: 'Josefin Slab' serif;
+  font-size: 2.28571429em; /* 32 px */
+  font-weight: 700;
+  margin-bottom:1em;
+  color: #BC7482;
+}
+
+h3{
+  font-family: 'Josefin Slab' serif;
+  font-size: 1.28571429em; /* 18 px */
+  font-weight: 500;
+  font-style: italic;
+  margin:2em 0 1em 1.2em;
+  color:black;
+  letter-spacing: 1px;
+}
+
+.solid-lines-text-body hr{
+  height: 0.5px;
+  margin:2em 0 0 0;
+  width:200px;
+  margin:-1em 0 -1em 8em;
+  /*align:center; not supported by html5*/
+  }
+
+  .text-group-example{
+  position:absolute;
+  width:500px; /*57% for responsive*/
+  outline: #5E3149 dotted thin;
+  text-align: center;
+  padding: 3em 3em 5em 3em;
+  min-width: 400px;
+  margin: 20em 3em 3em 60em;
+  }
+
+
+content img{
+  position:relative;
+  height: auto;  /* img height adjusts accordingly*/
+  max-width: 100%;
+}
+
+content .col-8of10{
+/*margin-left:7.5%;
+margin-right:7.5%;*/
+}
+
 
 
 /* Navigation bar styling*/

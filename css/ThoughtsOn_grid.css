@@ -30,6 +30,18 @@
 	}
 }
 
+
+.col-8of10{
+  width:80%;
+}
+
+@media (max-width:150em){
+  .col-8of10{
+    width:100%;
+
+  }
+
+
 .grid{
 	/*include these 3 codes in ur css as a safety mechanism*/
 	content: "";
