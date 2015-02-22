@@ -27,18 +27,38 @@ h3, a.button{
   color:black;
   letter-spacing: 1px;
 }
-  .home-text-group{
+  .home-text-group, .trial{
   display:inline-block;
   background-color: white;
   width:580px; /*57% for responsive*/
   height:758px;
-  text-align: center;
-  padding: 10em 3em 5em 3em;
+  height: auto;  /* img height adjusts accordingly*/
   max-width: 100%;
+  text-align: center;
+  padding: 10em 3em 10.7em 3em;
   vertical-align: top;
+  margin-left:-0.25em;
   }
 
-  .home-text-group p{
+  .home-text-group, .trial{
+  display:inline-block;
+  background-color: white;
+  width:580px; /*57% for responsive*/
+  height:758px;
+  height: auto;  /* img height adjusts accordingly*/
+  max-width: 100%;
+  text-align: center;
+  padding: 10em 3em 10.7em 3em;
+  vertical-align: top;
+  margin-left:-0.25em;
+  }
+  .trial{
+  margin-left:8.3%;
+  margin-top: -0.25em;
+
+  }
+
+  .home-text-group p,  .trial p{
   margin-top: 10em;
   line-height: 1.3em;
 }
@@ -77,16 +97,18 @@ a.button:hover, a.button:focus {
 
 /* Image stlying*/
 
-content img{
+  content img{
+  margin-left:-0.25em;
   height: auto;  /* img height adjusts accordingly*/
   max-width: 100%;
 }
 
-content .col-8of10{
-/*margin-left:7.5%;
-margin-right:7.5%;*/
-}
 
+
+/*.home-ready-mades-section{
+  margin-top: -0.25em;
+
+}*/
 
 /* Navigation bar styling*/
 
