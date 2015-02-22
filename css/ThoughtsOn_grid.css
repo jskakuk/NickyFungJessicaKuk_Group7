@@ -46,28 +46,46 @@
 @media (max-width:32em){
 
 
-	.home-text-group p, .home-text-group-2 p, .home-text-group-3 p{
-	  line-height: 1.3em;
+	p,li{
 	  font-size:0.85714286em; /* 12 px */
 	  margin-top: 3em !important;
 	}
 
-	.home-text-group, .home-text-group-2, .home-text-group-3{
+	.home-text-group, .home-text-group-2, .home-text-group-3, .blog-container{
 		padding-top:2em !important; /*overrides padding styling*/
 		padding-bottom:4em !important;
 	}
 
-	.home-text-group-2 h1, .home-text-group-3 h1 {
+	.home-text-group-2 h1, .home-text-group-3 h1, .blog-container h1 {
 		margin-top: 2em !important;
 	}
 
 	h5{
 	  font-size: 3em !important; /* 52 px*/ 
 	}
-	subcompanyname{
+	h7{
 	  font-size: 1.14285714em !important; /* 16 px */
 	}
 
+	.dotted-line-separator hr{
+	  margin-top: 3em !important;
+	  margin-bottom: 1em !important;
+	}
+
+	.blog-content-text{
+	  padding-left:0 !important;
+	}
+
+	.blog-content-text p, .blog-content p, li{
+	  margin-top: 0.5em !important;
+	}
+
+}
+
+@media (max-width:500em){
+	.blog-content-text{
+	  display: block;
+	}
 }
 
 
@@ -79,7 +97,6 @@
   .col-8of10{
     width:100%;
   }
-	
 }
 
 
