@@ -27,7 +27,9 @@ h3, a.button{
   color:black;
   letter-spacing: 1px;
 }
-  .home-text-group, .trial{
+
+
+  .home-text-group, .home-text-group-2{
   display:inline-block;
   background-color: white;
   width:580px; /*57% for responsive*/
@@ -38,27 +40,11 @@ h3, a.button{
   padding: 10em 3em 10.7em 3em;
   vertical-align: top;
   margin-left:-0.25em;
+  margin-top:-0.25em;
   }
 
-  .home-text-group, .trial{
-  display:inline-block;
-  background-color: white;
-  width:580px; /*57% for responsive*/
-  height:758px;
-  height: auto;  /* img height adjusts accordingly*/
-  max-width: 100%;
-  text-align: center;
-  padding: 10em 3em 10.7em 3em;
-  vertical-align: top;
-  margin-left:-0.25em;
-  }
-  .trial{
-  margin-left:8.3%;
-  margin-top: -0.25em;
 
-  }
-
-  .home-text-group p,  .trial p{
+  .home-text-group p, .home-text-group-2 p{
   margin-top: 10em;
   line-height: 1.3em;
 }
@@ -98,17 +84,13 @@ a.button:hover, a.button:focus {
 /* Image stlying*/
 
   content img{
-  margin-left:-0.25em;
+  margin-top:-0.25em;
+  margin-left:-0.20em;
   height: auto;  /* img height adjusts accordingly*/
   max-width: 100%;
 }
 
 
-
-/*.home-ready-mades-section{
-  margin-top: -0.25em;
-
-}*/
 
 /* Navigation bar styling*/
 
@@ -121,6 +103,7 @@ header nav a{
 
   display: block;
   margin-top: 1.5em;
+  margin-bottom: 0.25em;
   text-decoration: none;
   text-align: center;
   color:white;
