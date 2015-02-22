@@ -31,7 +31,6 @@ h3, a.button{
   font-family: 'Roboto Condensed' sans-serif;
   font-size: 4em; /* 56 px*/
   font-weight: 700;
-  margin-top: ;
   margin-bottom: -0.35em;
 }
 
@@ -58,51 +57,47 @@ subcompanyname{
   margin-top:-0.25em;
   }
 
+  .home-text-group-2 h1{
+    margin-top: 5em;
+  }
+
 
   .home-text-group p, .home-text-group-2 p{
   margin-top: 3em;
   line-height: 1.3em;
 }
 
-/* Buttons stlying*/
-
-a.button{
-  display: inline-block;
-  padding: 0.65em 0.75em 0.5em 0.75em;
-  margin:1em 0.2em 0.2em 0.2em;
-  outline: #BC7482 solid medium;
-  text-decoration: none;
-  color:#BC7482;
-  background: #464646;
-  background-color: white;
-  border: 1px solid #f5f5f5;
-
-  -webkit-transition: background-color 0.7s ease-out;
-  transition: background-color 0.s ease-out;
-}
-
-a.button:hover, a.button:focus {
-  background-color: #BC7482;
-  color: white;
-  text-decoration: none;
-}
 
 /* Line stlying*/
 
 .solid-lines-text-body hr{
   height: 0.5px;
-  width:150px;
+  width:120px;
   margin-left:auto;
   margin-right:auto; /*align:center; not supported by html5*/
   }
 
-/* Image stlying*/
+/* Image stlying: home*/
 
-  content img{
+content img{
   margin-top:-0.25em;
   margin-left:-0.20em;
   height: auto;  /* img height adjusts accordingly*/
   max-width: 100%;
+}
+
+.product-images{
+  width:450px;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  height:auto;
+}
+
+.product-images img{
+  margin:0.5em 0.5em 0.5em 0.5em;
 }
 
 
@@ -182,6 +177,29 @@ a.menu-item-selected{
   margin-left:auto;
   margin-right:auto; /*align:center; not supported by html5*/
 
+}
+
+/* Buttons stlying*/
+
+a.button{
+  display: inline-block;
+  padding: 0.65em 0.75em 0.5em 0.75em;
+  margin:1em 0.2em 0.2em 0.2em;
+  outline: #BC7482 solid medium;
+  text-decoration: none;
+  color:#BC7482;
+  background: #464646;
+  background-color: white;
+  border: 1px solid #f5f5f5;
+
+  -webkit-transition: background-color 0.7s ease-out;
+  transition: background-color 0.s ease-out;
+}
+
+a.button:hover, a.button:focus {
+  background-color: #BC7482;
+  color: white;
+  text-decoration: none;
 }
 
 
