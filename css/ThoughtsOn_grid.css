@@ -35,11 +35,25 @@
   width:80%;
 }
 
-@media (max-width:150em){
+@media (max-width:100em){
   .col-8of10{
     width:100%;
-
   }
+	
+}
+
+@media (max-width:32em){
+
+	.home-text-group p{
+	  line-height: 1.3em;
+	  font-size:0.85714286em; /* 12 px */
+	}
+
+	.home-text-group{
+		padding-top:2em;
+	}
+  }
+
 
 
 .grid{
