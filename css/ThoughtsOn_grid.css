@@ -55,6 +55,17 @@
 	}
 }
 
+  .col-4of10{
+  width:80%;
+}
+
+@media (max-width:100em){
+  .col-4of10{
+    width:100%;
+  }
+	
+}
+
 
 
 .grid{
