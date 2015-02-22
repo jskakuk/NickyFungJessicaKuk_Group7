@@ -12,10 +12,10 @@ body, nav a{
 
 h1{
   font-family: 'Josefin Slab' serif;
-  font-size: 2.228571429em; /* 36 px */
+  font-size: 1.71428571em; /* 24 px */
   font-weight: 700;
   color: #BC7482;
-  margin-bottom: 1em
+  margin-top: 7em;
 }
 
 h3, a.button{
@@ -23,9 +23,24 @@ h3, a.button{
   font-size: 1.28571429em; /* 18 px */
   font-weight: 500;
   font-style: italic;
-  margin-top:2em;
   color:black;
   letter-spacing: 1px;
+}
+
+ h5{
+  font-family: 'Roboto Condensed' sans-serif;
+  font-size: 4em; /* 56 px*/
+  font-weight: 700;
+  margin-top: ;
+  margin-bottom: -0.35em;
+}
+
+subcompanyname{
+  font-family: 'Josefin Slab' serif;
+  font-size: 1.57142857em; /* 22 px */
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  font-style: italic;
 }
 
 
@@ -37,7 +52,7 @@ h3, a.button{
   height: auto;  /* img height adjusts accordingly*/
   max-width: 100%;
   text-align: center;
-  padding: 10em 3em 10.7em 3em;
+  padding: 0 3em 7em 3em;
   vertical-align: top;
   margin-left:-0.25em;
   margin-top:-0.25em;
@@ -45,7 +60,7 @@ h3, a.button{
 
 
   .home-text-group p, .home-text-group-2 p{
-  margin-top: 10em;
+  margin-top: 3em;
   line-height: 1.3em;
 }
 
@@ -76,7 +91,7 @@ a.button:hover, a.button:focus {
 
 .solid-lines-text-body hr{
   height: 0.5px;
-  width:200px;
+  width:150px;
   margin-left:auto;
   margin-right:auto; /*align:center; not supported by html5*/
   }
