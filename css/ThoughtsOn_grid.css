@@ -82,11 +82,12 @@
 
 }
 
-@media (max-width:500em){
+@media (max-width:59em){ /*text wraps arnd image until 59, then floats left*/
 	.blog-content-text{
-	  display: block;
+		float:left;
 	}
 }
+
 
 
   .col-8of10{
