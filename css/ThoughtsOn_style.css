@@ -148,7 +148,7 @@ content img{
 .blog-content-image img, .bio-content-image img {
   margin-top:1em;
   margin-right:3em;
-  margin-bottom:1em;
+  margin-bottom:0.5em;
   float:left;
   height: auto;  /* img height adjusts accordingly*/
   max-width: 100%;
