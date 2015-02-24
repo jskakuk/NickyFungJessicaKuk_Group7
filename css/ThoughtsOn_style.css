@@ -78,10 +78,16 @@ em{
   margin-top:-0.25em;
   }
 
-.blog-container, .bio-container{
+.blog-container, .bio-container, .footer{
   width:1160px;
   height: auto;  /* img height adjusts accordingly*/
   max-width: 100%;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.footer{
+  margin-bottom:2em;
 }
 
 .blog-content, .bio-content{
@@ -103,6 +109,13 @@ em{
   height:auto;
   display: inline-block;
   padding:2em;
+}
+
+.footer-content{
+  color:white;
+  opacity:0.5;
+  text-align: left;
+  margin-top: -1em;
 }
 
 
@@ -169,13 +182,17 @@ content img{
   margin-right:auto; /*align:center; not supported by html5*/
   }
 
-.dotted-line-separator hr{
+.dotted-line-separator hr, .dotted-line-footer hr{
   width:97%;
   border-top: 1.7px dotted;
   background:transparent;
   margin: 6em auto 2em auto;
   opacity:0.5;
+}
 
+.dotted-line-footer hr{
+  margin-top:3em;
+  width:100%;
 }
 
 
