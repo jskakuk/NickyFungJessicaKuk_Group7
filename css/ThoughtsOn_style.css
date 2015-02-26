@@ -51,7 +51,7 @@ em{
 
 /* Type container styling*/
 
-.home-text-group, .home-text-group-2, .home-text-group-3, .blog-container, .bio-container, .product-details-container,.product-container{
+.home-text-group, .home-text-group-2, .home-text-group-3, .white-info-container{
   display:inline-block;
   background-color: white;
   width:580px;
@@ -65,7 +65,7 @@ em{
   margin-top:-0.25em;
   }
 
-.blog-container, .bio-container, .product-details-container,.product-container, .footer{
+.white-info-container, .footer{
   width:1160px;
   height: auto;  /* img height adjusts accordingly*/
   max-width: 100%;
@@ -108,7 +108,7 @@ em{
 
 /* Specific type container styling*/
 
-.home-text-group-2 h1, .home-text-group-3 h1, .blog-container h1, .bio-container h1, .product-container h1{
+.home-text-group-2 h1, .home-text-group-3 h1, .white-info-container h1{
   margin-top: 5em;
 }
 
