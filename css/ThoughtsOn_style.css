@@ -234,7 +234,7 @@ a.menu-item-selected{
 }
 
 
-.nav-icons img:hover, .product-images img:hover, .product-content img:hover{
+.nav-icons img:hover, .product-images img:hover{
   opacity: 0.3;
 }
 
