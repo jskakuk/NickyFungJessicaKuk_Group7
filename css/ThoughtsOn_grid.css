@@ -88,7 +88,7 @@
 	  margin-bottom: 1em !important;
 	}
 
-	.blog-content-text{
+	.blog-content-text, .product-details-content-text{
 	  padding-left:0 !important;
 	}
 
@@ -99,7 +99,7 @@
 }
 
 @media (max-width:59em){ /*text wraps arnd image until 59, then floats left*/
-	.blog-content-text{
+	.blog-content-text, .product-details-content-text{
 		float:left;
 	}
 }

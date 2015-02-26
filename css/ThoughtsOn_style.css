@@ -22,7 +22,7 @@ h2{
   font-family: 'Josefin Slab' serif;
   font-size: 1.5em; /* 21 px */
   font-weight: 500;
-  margin-top:2em;
+  margin-top:1em;
 }
 
 h3, a.button{
@@ -83,7 +83,7 @@ em{
 }
 
 
-.blog-content-text{
+.blog-content-text, .product-details-content-text{
   padding-top: 1em;
   max-width:1180px; /*text wraps arnd image until 57, then floats left*/
   height:auto; /* img height adjusts accordingly*/
@@ -98,17 +98,7 @@ em{
   padding:2em;
 }
 
-<<<<<<< Updated upstream
-=======
-/*.product-content-text{
 
-  margin-top: -2em;
-
-
-
-}*/
-
->>>>>>> Stashed changes
 .footer-content{
   color:white;
   opacity:0.5;
@@ -132,11 +122,6 @@ em{
   margin-top: 0;
 }
 
-.product-content p{
-
-
-
-}
 
 
 /* Image stlying: home*/
@@ -165,7 +150,7 @@ img{
   margin:0.5em 0.5em 0.5em 0.5em;
 }
 
-.blog-content-image img, .bio-content-image img {
+.blog-content-image img, .bio-content-image img, .product-details-content-image img {
   margin-top:1em;
   margin-right:3em;
   margin-bottom:0.5em;
@@ -290,7 +275,6 @@ select{
   margin-right:3em;
   width:153px;
 }
-
 
 
 
