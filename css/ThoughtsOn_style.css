@@ -22,7 +22,7 @@ h2{
   font-family: 'Josefin Slab' serif;
   font-size: 1.5em; /* 21 px */
   font-weight: 500;
-  margin-top:2em;
+  margin-top:5em;
 }
 
 h3, a.button{
@@ -124,21 +124,22 @@ em{
 
 /* Image stlying: home*/
 
-content img{
-  margin-top:-0.25em;
-  margin-left:-0.20em;
+img{
   height: auto;  /* img height adjusts accordingly*/
   max-width: 100%;
+
+}
+.home-theme-image{
+  margin-top:-0.25em;
+  margin-left:-0.20em;
 }
 
 .product-images{
   width:450px;
   margin-top: 1em;
   margin-bottom: 0.3em;
-  margin-right: auto;
+  margin-right: auto; /*centers groups of images*/
   margin-left: auto;
-  max-width: 100%;
-  height:auto;
 }
 
 .product-images img{
@@ -150,13 +151,8 @@ content img{
   margin-right:3em;
   margin-bottom:0.5em;
   float:left;
-  height: auto;  /* img height adjusts accordingly*/
-  max-width: 100%;
 }
 
-.bio-content-image img {
-  margin-bottom:3em;
-}
 
 
 
@@ -216,6 +212,9 @@ a.menu-item-selected{
   color:#5E3149;
 }
 
+.nav-icons img{
+  max-width: 32px;
+}
 
 .nav-icons, .nav-icons-selected{
   float:left;
