@@ -22,7 +22,7 @@ h2{
   font-family: 'Josefin Slab' serif;
   font-size: 1.5em; /* 21 px */
   font-weight: 500;
-  margin-top:5em;
+  margin-top:2em;
 }
 
 h3, a.button{
@@ -51,7 +51,7 @@ em{
 
 /* Type container styling*/
 
-.home-text-group, .home-text-group-2, .home-text-group-3, .blog-container, .bio-container, .product-container{
+.home-text-group, .home-text-group-2, .home-text-group-3, .blog-container, .bio-container, .product-details-container,.product-container{
   display:inline-block;
   background-color: white;
   width:580px;
@@ -65,7 +65,7 @@ em{
   margin-top:-0.25em;
   }
 
-.blog-container, .bio-container, .product-container, .footer{
+.blog-container, .bio-container, .product-details-container,.product-container, .footer{
   width:1160px;
   height: auto;  /* img height adjusts accordingly*/
   max-width: 100%;
@@ -230,7 +230,7 @@ a.menu-item-selected{
 }
 
 
-.nav-icons img:hover{
+.nav-icons img:hover, .product-images img:hover{
   opacity: 0.3;
 }
 
