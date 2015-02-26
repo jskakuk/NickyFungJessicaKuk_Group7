@@ -159,7 +159,6 @@ img{
 
 
 /* Line stlying*/
-
 .solid-lines-text-body hr{
   height: 0.5px;
   width:120px;
@@ -168,7 +167,7 @@ img{
   }
 
 .dotted-line-separator hr, .dotted-line-footer hr{
-  width:97%;
+  width:100%;
   border-top: 1.7px dotted;
   background:transparent;
   margin: 6em auto 2em auto;
@@ -232,7 +231,7 @@ a.menu-item-selected{
 }
 
 
-.nav-icons img:hover, .product-images img:hover{
+.nav-icons img:hover, .product-images img:hover, .product-content img:hover{
   opacity: 0.3;
 }
 
@@ -267,6 +266,15 @@ a.button:hover, a.button:focus {
   color: white;
   text-decoration: none;
 }
+
+/* Dropdown styling*/
+
+select{
+  margin-right:3em;
+  width:153px;
+}
+
+
 
 
 
