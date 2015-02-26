@@ -34,19 +34,6 @@ h3, a.button{
   letter-spacing: 1px;
 }
 
- h5{
-  font-size: 4em; /* 56 px*/
-  font-weight: 700;
-  margin-bottom: -0.35em;
-}
-
-h7{
-  font-family: 'Josefin Slab' serif;
-  font-size: 1.57142857em; /* 22 px */
-  font-weight: 300;
-  letter-spacing: 0.3em;
-  font-style: italic;
-}
 
 p, li{
   margin-top: 3em;
@@ -109,14 +96,6 @@ em{
   height:auto;
   display: inline-block;
   padding:2em;
-}
-
-.product-content{
-
-
-
-
-
 }
 
 .footer-content{
