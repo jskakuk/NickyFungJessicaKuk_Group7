@@ -34,7 +34,7 @@
 	width:25%;
 }
 
-@media (max-width:62em){ /* at 62em, with column width becomes 50%, allowing 2 columns(product images) to be side by side*/
+@media (max-width:60em){ /* at 60em, with column width becomes 50%, allowing 2 columns(product images) to be side by side*/
 	.col-2of8{
 		width:50%;
 	}
