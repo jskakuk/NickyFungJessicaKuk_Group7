@@ -14,28 +14,27 @@
 }
 
 
-.col-2of10{
+.col-2of10{  /* columns used for nav bar*/
 	width:20%;
 }
 
-@media (max-width:55em){
+@media (max-width:55em){ /* at 55 em, the columns should expand to 100% and take up whole screen*/
 	.col-2of10{
 		width:100%;
 	}
 
 	.nav-icons-group{
-		margin-left: auto; 
+		margin-left: auto; /*helps align nav icons to the center*/
     	margin-right: auto;
     	width:50%;
 	}
 }
 
-
 .col-2of8{
 	width:25%;
 }
 
-@media (max-width:55em){ /* at 60em, with column width becomes 50%, allowing 2 columns(product images) to be side by side*/
+@media (max-width:62em){ /* at 62em, with column width becomes 50%, allowing 2 columns(product images) to be side by side*/
 	.col-2of8{
 		width:50%;
 	}
@@ -45,7 +44,7 @@
 	}
 }
 
-@media (max-width:32em){ /* at 32em, with column width becomes 100%, and the product image becomes full size and stacks in 1 column*/
+@media (max-width:35em){ /* at 32em, with column width becomes 100%, and the product image becomes full size and stacks in 1 column*/
 	.col-2of8{
 		width:100%;
 	}
@@ -71,21 +70,21 @@
 	
 }
 
-@media (max-width:32em){
+@media (max-width:35em){
 
 
 	p,li{
 	  font-size:0.85714286em; /* 12 px */
-	  margin-top: 6em !important;
+	  margin-top: 2em !important;
 	}
 
 	.home-text-group, .home-text-group-2{
-		padding-top:2em !important; /*overrides padding styling*/
+		padding-top:2em !important; /*overrides padding styling, shrinks white space*/
 		padding-bottom:4em !important;
 	}
 
 	.white-info-container{
-		padding-top:0em !important; /*overrides padding styling*/
+		padding-top:0em !important; /*overrides padding styling, shrinks white space*/
 	}
 
 	.home-text-group-2 h1, .home-text-group-3 h1{
@@ -101,7 +100,7 @@
 	  padding-left:0 !important;
 	}
 
-	.blog-content p, .bio-content p, li{
+	.blog-content p, .bio-content p, .product-content-text p, li{
 	  margin-top: 0.5em !important;
 	}
 
