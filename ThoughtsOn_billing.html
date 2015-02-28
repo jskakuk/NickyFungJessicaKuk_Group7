@@ -4,7 +4,7 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Thoughts On Crafts | Shipping Info</title>
+    <title>Thoughts On Crafts | Billing Info</title>
 
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 
@@ -61,14 +61,14 @@
                   <div class="processbar">
                       <div class="col-3of8">
                         <div class="processbar-info-container">
-                          <h3><strong>1. SHIPPING INFO</strong></h3>
+                          <div id="processbar-inactive-steps"><h3><strong>1. SHIPPING INFO</strong></h3>
+                          </div>
                         </div>
                       </div>
 
                       <div class="col-3of8">
                         <div class="processbar-info-container">
-                          <div id="processbar-inactive-steps"><h3><strong>2. BILLING INFO</strong></h3>
-                          </div>
+                          <h3><strong>2. BILLING INFO</strong></h3>
                         </div>
                       </div>
 
@@ -80,8 +80,52 @@
                       </div>
                   </div>
 
-              <!--shipping info form-->
 
+
+
+              <!--billing info form-->
+
+              <form class="payment-options">
+                    <input type="radio" name="card-option" value="master card" checked> <img src="images/icons/icon_mastercard.png"height="34" width="54" alt="mastercard placeholder">
+
+                    <input type="radio" name="card-option" value="visa"><img src="images/icons/icon_visa.png"height="34" width="54" alt="visa placeholder">
+      
+                    <input type="radio" name="card-option" value="american express"><img src="images/icons/icon_ae.png"height="34" width="54" alt="visa placeholder">
+              </form>
+
+
+              <form class="shipping-info-form">
+                <div class="col-2of8">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" placeholder="Jane">
+                </div>
+
+                <div class="col-2of8">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" placeholder="Doe">
+                </div>
+
+                <div class="col-2of8">
+                  <label for="last_name">Phone Number</label>
+                  <input type="text" id="phone-number" placeholder="604-268-4253">
+                </div>
+
+                <div class="col-2of8">
+                  <label for="email">Email Adress</label>
+                  <input type="text" id="email" placeholder="jdoe@gmail.com">
+                </div>
+              </form>
+
+
+              <div class="col-8of10">
+                <div class="dotted-line-separator"><hr></div>
+                  <div class="check-boxes">
+                    <input type="checkbox" name="same-billing-info" value="same-billing-info" checked><strong>MY BILLING & SHIPPING ADDRESSES ARE THE SAME</strong><br>
+                  </div>
+              </div>
+
+
+              <!--shipping info form-->
 
               <form class="shipping-info-form">
                 <div class="col-4of8">
