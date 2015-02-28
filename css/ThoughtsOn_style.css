@@ -249,7 +249,7 @@ a.menu-item-selected{
 a.button{
   display: inline-block;
   padding: 0.65em 0.75em 0.5em 0.75em;
-  margin:1em 0.2em 0.2em 0.2em;
+  margin:1em 0.2em 0 0.2em;
   outline: #BC7482 solid medium;
   text-decoration: none;
   color:#BC7482;
@@ -272,7 +272,128 @@ a.button:hover, a.button:focus {
 select{
   margin-right:3em;
   width:153px;
+  border: 1.5px solid #A18BA4;
+  background:transparent;
 }
+
+
+/*check out process bar styling*/
+
+.processbar{
+  width:1160px;
+  height: auto;  /* img height adjusts accordingly*/
+  max-width: 100%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:0;
+}
+
+.processbar-info-container{
+  height:40px;
+  color:white;
+  width:100%;
+}
+
+.processbar-info-container h3{
+  background:#A18BA4;
+  padding:0.7em 1em 0.5em 1em;
+  color:white;
+}
+      
+#processbar-inactive-steps{
+  opacity:0.3;
+}
+
+.shipping-info-form{
+  margin-top: 10em;
+}
+
+
+
+
+
+input{
+  height:30px;
+  max-width:100%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius:5px;
+  border:1px solid #A18BA4;
+  padding-left: 1em;
+}
+
+
+
+.shipping-info-form {
+  position: relative;
+}
+
+.col-4of8 {
+  width: 50%;
+  padding: 0.5em 2em;
+}
+
+.shipping-info-form label {
+  display: block;
+  padding: 40px 5px 5px 2px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.shipping-info-form input,.shipping-info-form select {
+  padding: 5px 10px;
+
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 1.5px solid #A18BA4;
+}
+
+
+
+
+.shipping-info-form input:focus,
+.shipping-info-form label:active + input,
+.shipping-info-form label:active + textarea {
+  outline: none;
+  border: 3px solid #10689a;
+}
+
+
+
+.cbp-mc-submit-wrap {
+  text-align: center;
+  padding-top: 40px;
+  clear: both;
+}
+
+.shipping-info-form input.cbp-mc-submit {
+  background: #10689a;
+  border: none;
+  color: #fff;
+  width: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  border-radius: 2px;
+  letter-spacing: 1px;
+}
+
+
+
+
+@media(max-width: 48em) {
+  .col-4of8 {
+    width: 100%;
+  }
+}
+
+
+
 
 
 
