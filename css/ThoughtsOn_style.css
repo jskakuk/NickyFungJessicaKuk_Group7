@@ -20,7 +20,7 @@ h1{
 
 h2{
   font-family: 'Josefin Slab', serif;
-  font-size: 1.42857143em; /* 20 px */
+  font-size: 1.35714286em; /* 19 px */
   font-weight: 500;
   margin-top:1em;
 }
@@ -186,7 +186,7 @@ img{
 
 /* Navigation bar styling*/
 
-header nav a{
+ nav a{
   font-family: 'Josefin Slab', serif;
   font-size: 1.14285715em; /*1px/14px*/
   letter-spacing: 0.1em;
@@ -337,6 +337,7 @@ select{
   margin-top: 5em;
   margin-bottom: 2em;
   float:left;
+  display:inline-block;
 
 }
 
