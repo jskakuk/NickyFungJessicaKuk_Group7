@@ -335,15 +335,14 @@ select{
 
 .payment-options{
   margin-top: 5em;
-  /*float:left;*/
-  display:inline-block;
+  margin-bottom: 2em;
+  float:left;
+
 }
 
 .payment-options img{
   margin-right:1em;
 }
-
-
 
 
 
