@@ -304,15 +304,13 @@ select{
   opacity:0.3;
 }
 
-
-.shipping-info-form {
-  margin-bottom:7em;
+.checkout-info-form{
+ margin-bottom: 5em;
 }
 
  label {
   display: block;
   padding: 3em 0.35em 0.35em 0.25em;
-  font-size: 1.1em;
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
@@ -322,6 +320,8 @@ select{
   padding: 0.2em 0.8em;
   display: block;
   width: 95%;
+  margin-left:auto;
+  margin-right: auto;
   background: transparent;
   border-radius:5px;
   border: 1.5px solid #A18BA4;
@@ -343,6 +343,11 @@ select{
 
 .payment-options img{
   margin-right:1em;
+}
+
+.checkout-button{
+  text-align: right;
+  margin-right:2em;
 }
 
 
