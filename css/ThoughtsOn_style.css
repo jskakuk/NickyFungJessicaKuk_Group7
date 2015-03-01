@@ -309,17 +309,16 @@ select{
   margin-bottom:7em;
 }
 
-
-.shipping-info-form label {
+ label {
   display: block;
-  padding: 40px 5px 5px 2px;
+  padding: 3em 0.35em 0.35em 0.25em;
   font-size: 1.1em;
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
 }
 
-.shipping-info-form input,.shipping-info-form select {
+.checkout-info-form input,.checkout-info-form select {
   padding: 0.2em 0.8em;
   display: block;
   width: 95%;
@@ -328,6 +327,7 @@ select{
   border: 1.5px solid #A18BA4;
   height:25px;
 }
+
 
 .check-boxes{
   float:left;
