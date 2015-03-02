@@ -49,6 +49,15 @@ em{
   color: #BC7482;
 }
 
+a{
+  color:#A18BA4;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
 /* Type container styling*/
 
 .home-text-group, .home-text-group-2, .home-text-group-3, .white-info-container{
@@ -77,7 +86,7 @@ em{
   margin-bottom:2em;
 }
 
-.blog-content, .bio-content, .product-content, .product-details-content, .suggested-product-images{
+.blog-content, .bio-content, .product-content, .product-details-content, .suggested-product-images, .thankyou-content{
   text-align: left;
   padding: 1em;
 
@@ -236,7 +245,7 @@ a.menu-item-selected{
 }
 
 .logo{
-  font-family: 'Gravitas One';
+  font-family: 'Gravitas One',serif;
   font-style: normal;
   font-size: 1.5em;
   margin-top: 0.5em;
@@ -349,6 +358,31 @@ select{
   text-align: right;
   margin-right:1.9em;
 }
+
+
+/*order summary(table) styling*/
+
+.order-summary {
+  border-collapse:collapse;
+  border: 1.5px solid #BC7482;
+
+}
+
+.order-summary td{
+  padding:0.75em 1.5em;
+  text-align: left
+}
+
+.order-summary th{
+  padding:0.15em 1em;
+  background-color:#BC7482;
+}
+
+th h3{
+  color:white;
+}
+
+
 
 
 
