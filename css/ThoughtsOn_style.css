@@ -365,27 +365,48 @@ select{
 .order-summary {
   border-collapse:collapse;
   border: 1.5px solid #BC7482;
-
 }
 
-.order-summary td{
-  padding:0.75em 1.5em 1em 1.5em;
-  text-align: left
+td{
+  padding:1.5em 1.5em .5em 1.5em;
+  text-align: left;
 }
 
-.order-summary th{
+th{
   padding:0.15em 1em;
   background-color:#BC7482;
 }
 
 .order-summary .button{
   margin-bottom: 1em;
+  margin-top: 0;
 }
 
 th h3{
   color:white;
 }
 
+.shoppingbag-summary  {
+  border-collapse:collapse;
+  border-spacing:0;
+  margin-right: 0.75em;
+}
+
+.shoppingbag-summary td{
+  border-style:dotted; 
+  border-color: #AAA3A3;
+  border-width:0px;
+  border-top-width:0.1em;
+  border-bottom-width:0.1em;
+}
+.shoppingbag-summary th{
+  background-color:#AAA3A3;
+}
+
+
+.shoppingbag-summary select{
+  margin-bottom: 4.5em;
+}
 
 
 
