@@ -354,7 +354,7 @@ select{
   margin-right:1em;
 }
 
-.checkout-button{
+.checkout-buttons{
   text-align: right;
   margin-right:1.9em;
 }
@@ -369,13 +369,17 @@ select{
 }
 
 .order-summary td{
-  padding:0.75em 1.5em;
+  padding:0.75em 1.5em 1em 1.5em;
   text-align: left
 }
 
 .order-summary th{
   padding:0.15em 1em;
   background-color:#BC7482;
+}
+
+.order-summary .button{
+  margin-bottom: 1em;
 }
 
 th h3{
