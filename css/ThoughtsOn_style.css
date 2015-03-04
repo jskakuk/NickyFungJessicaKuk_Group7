@@ -447,13 +447,14 @@ th h3{
   .shoppingbag-summary, .col-6of8{
     width:100%;
   }
+
+  .order-summary{
+    margin-top:3em;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 43em) {
 
-.col-6of8{
-  width:100%;
-}
 
   /* Force table to not be like tables anymore */
     .shoppingbag-summary table, .shoppingbag-summary thead, .shoppingbag-summary tbody, .shoppingbag-summary th, .shoppingbag-summary td, .shoppingbag-summary tr { 
@@ -467,7 +468,7 @@ th h3{
   }
   
   .shoppingbag-summary tr { 
-    border: 1px solid #ccc; 
+    border: 1px solid #c1c1c1; 
   }
   
   .shoppingbag-summary td { 
