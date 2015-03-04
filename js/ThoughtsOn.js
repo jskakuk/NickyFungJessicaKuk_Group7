@@ -45,11 +45,9 @@ $(document).ready(function(){
   var current=0;
 
   image[0]=new Image();
-  image[0].src="images/detailed_product/productdetails_wine.jpg";
+  image[0].src="images/detailed_product/productdetails_wine_context.jpg";
   image[1]=new Image();
-  image[1].src="images/detailed_product/productdetails_wine_context.jpg";
-  image[2]=new Image();
-  image[2].src="images/detailed_product/productdetails_wine_closeup.jpg";
+  image[1].src="images/detailed_product/productdetails_wine_closeup.jpg";
 
   
 
@@ -76,6 +74,8 @@ $(document).ready(function(){
   });
 
 })
+
+
 
 
 

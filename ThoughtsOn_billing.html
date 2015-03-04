@@ -87,57 +87,61 @@
               <!--billing info form-->
               <div class="col-8of8">
                 <form class="payment-options">
-                  
-                      <input type="radio" name="card-option" value="master card" checked> <img src="images/icons/icon_mastercard.png"height="34" width="54" alt="mastercard placeholder">
-
-                      <input type="radio" name="card-option" value="visa"><img src="images/icons/icon_visa.png"height="34" width="54" alt="visa placeholder">
-        
-                      <input type="radio" name="card-option" value="american express"><img src="images/icons/icon_ae.png"height="34" width="54" alt="visa placeholder">
-                  
+                  <div class="card-option">
+                      <input type="radio" name="card-option" value="master card" checked> <img src="images/icons/icon_mastercard.png"height="51 width="81" alt="mastercard placeholder">
+                    </div>
+                    <div class="card-option">
+                      <input type="radio" name="card-option" value="visa"><img src="images/icons/icon_visa.png"height="51" width="81" alt="visa placeholder">
+                    </div>
+                    <div class="card-option">
+                      <input type="radio" name="card-option" value="american express"><img src="images/icons/icon_ae.png"height="51" width="81" alt="visa placeholder">
+                    </div>
                   
                 </form>
               </div> 
 
 
               <form class="checkout-info-form">
-                <div class="col-2of8">
-                  <label for="card-number">Card Number</label>
-                  <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
-                </div>
+                <div class="billing-info-form">
+                  <div class="col-2of8">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
+                  </div>
 
-                <div class="col-2of8">
-                  <label for="month">Expiration Month</label>
-                  <select id="motnh">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
-                      <option>7</option>
-                      <option>8</option>
-                      <option>9</option>
-                      <option>10</option>
-                      <option>11</option>
-                      <option>12</option>
-                  </select>
-                </div>
+                  <div class="col-2of8">
+                    <label for="month">Expiration Month</label>
+                    <select id="motnh">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                  </div>
 
-                <div class="col-2of8">
-                  <label for="year">Expiration Year</label>
-                  <select id="year">
-                      <option>2015</option>
-                      <option>2016</option>
-                      <option>2017</option>
-                      <option>2018</option>
-                      <option>2019</option>
-                      <option>2020</option>
-                  </select>
-                </div>
+                  <div class="col-2of8">
+                    <label for="year">Expiration Year</label>
+                    <select id="year">
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                    </select>
+                  </div>
 
-                <div class="col-2of8">
-                  <label for="security-code">Security Code</label>
-                  <input type="text" id="security-code" placeholder="XXX">
+                  <div class="col-2of8">
+                    <label for="security-code">Security Code</label>
+                    <input type="text" id="security-code" placeholder="XXX">
+                  </div>
                 </div>
               </form>
 
@@ -223,12 +227,17 @@
                       <option>Victoria</option>
                       <option>White Rock</option>
                     </select>
+
+
+                      <div class"col-2of8">
+                        <div id="purchase-button">
+                          <a class="button" href="ThoughtsOn_ThankYou.html">PURCHASE NOW</a>
+                        </div>
+                      </div>
+
                 </div>
               </form>
               
-              <div class="checkout-buttons">
-                <a class="button" href="ThoughtsOn_ThankYou.html">PURCHASE NOW</a>
-              </div>
       
         </div>
       </div>

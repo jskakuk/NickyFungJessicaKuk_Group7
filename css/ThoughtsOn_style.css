@@ -370,7 +370,7 @@ select{
 .checkout-info-form input,.checkout-info-form select {
   padding: 0.2em 0.8em;
   display: block;
-  width: 95%;
+  width: 100%;
   margin-left:auto;
   margin-right: auto;
   background: transparent;
@@ -379,21 +379,23 @@ select{
   height:25px;
 }
 
+.billing-info-form input, .billing-info-form select{
+  width:88%;
+} 
+
 
 .check-boxes{
   float:left;
 }
 
-.payment-options{
+.card-option{
   margin-top: 5em;
   margin-bottom: 2em;
   float:left;
-  display:inline-block;
-
 }
 
 .payment-options img{
-  margin-right:1em;
+  margin-right:2em;
 }
 
 .checkout-buttons{
@@ -410,8 +412,9 @@ select{
 }
 
 .order-summary .button{
-  margin-bottom: 1em;
-  margin-top: 0;
+    margin: 0 auto 1em auto;
+    width:100%;
+    text-align: center;
 }
 
 td{
@@ -444,6 +447,7 @@ th h3{
   padding:1.5em 2em .5em 2em;
   text-align: left;
 }
+
 
 .shoppingbag-summary th{
   background-color:#AAA3A3;
@@ -491,10 +495,13 @@ th h3{
 
 }
 
-.blog-comment-button a {
-  
+#blog-comment-button a, #payment-button a, #purchase-button a{
   float:right;
+  margin-top: 2em;
 }
+
+
+
 
 
 

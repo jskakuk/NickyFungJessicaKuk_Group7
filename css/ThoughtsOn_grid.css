@@ -29,13 +29,6 @@
 		width:4em;
 		margin-bottom: 2em;
 	}
-	.blog-comment-button a {
-		margin-left:auto;
-		margin-right: auto;
-		width:100%;
-		text-align: center;
-		
-	}
 }
 
 .col-2of8{
@@ -56,16 +49,19 @@
 	.col-2of8{
 		width:100%;
 	}
+
+	#blog-comment-button a, #payment-button a, #purchase-button a{
+		margin-left:auto;
+		margin-right: auto;
+		width:100%;
+		text-align: center;
+	}
 }
 
 
 .col-8of10{
   width:80%;
 
-}
-
-.col-8of8{
-  width:100%;
 }
 
 
@@ -75,6 +71,23 @@
     width:100%;
   }
 	
+}
+
+
+.col-8of8{
+  width:100%;
+}
+
+@media (max-width:33em){
+	.card-option{
+		clear:left;
+		display:block;
+		margin-top: 2em !important;
+		margin-bottom: 0.5em !important;
+		margin-left: auto;
+		margin-right: auto;
+		width:100%;
+	}
 }
 
 @media (max-width:35em){
