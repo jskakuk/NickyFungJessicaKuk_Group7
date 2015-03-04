@@ -132,6 +132,76 @@
   }
 }
 
+.col-6of8{
+	width:75%;
+}
+
+@media (max-width: 66em) {
+
+  .col-6of8{
+    width:100%;
+    margin-bottom: 2em;
+
+  }
+}
+
+@media (max-width: 43em) {
+
+
+  /* force table to not be like tables anymore */
+    .shoppingbag-summary table, .shoppingbag-summary thead, .shoppingbag-summary tbody, .shoppingbag-summary th, .shoppingbag-summary td, .shoppingbag-summary tr { 
+    display: inline-block;
+    width:100%; 
+  }
+  
+    .shoppingbag-summary thead tr { 
+    display:none;   /* hide table headers */
+  }
+  
+  .shoppingbag-summary tr { 
+    border: 1px solid #c1c1c1; 
+  }
+  
+  .shoppingbag-summary td { 
+    border-bottom: 1px solid #eaeaea; 
+    position: relative;   /* behave  like a "row" */
+    padding-left: 45%;
+    padding-top: 0.5em; 
+  }
+  
+    .shoppingbag-summary td:before { 
+    position: absolute;     /* mimics a table header */
+    top: 0.5em;
+    left: 0.5em;
+    width: 45%; 
+    padding-right: 0.7em; 
+    white-space: nowrap;
+  }
+
+
+  .shoppingbag-summary select{
+    vertical-align: middle;
+	}
+  
+  /* Label the data for the compressed table*/
+  .shoppingbag-summary td:nth-of-type(1):before { 
+    content: "Item"; 
+  }
+  .shoppingbag-summary td:nth-of-type(2):before { 
+    content: ""; 
+  }
+  .shoppingbag-summary td:nth-of-type(3):before { 
+    content: "Quantity"; 
+  }
+  .shoppingbag-summary td:nth-of-type(4):before { 
+    content: "Item Price"; 
+  }
+  .shoppingbag-summary td:nth-of-type(5):before { 
+    content: "Total Price"; }
+}
+
+
+
 
 .col-3of8{
 	width:33.333333333%;
@@ -148,9 +218,6 @@
 	}
 }
 
-.col-6of8{
-	width:75%;
-}
 
 
 .grid{

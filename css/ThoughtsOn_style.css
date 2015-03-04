@@ -371,6 +371,11 @@ select{
   border: 1.5px solid #BC7482;
 }
 
+.order-summary .button{
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
 td{
   padding:1.5em 1.5em .5em 1.5em;
   text-align: left;
@@ -381,13 +386,17 @@ th{
   background-color:#BC7482;
 }
 
-.order-summary .button{
-  margin-bottom: 1em;
-  margin-top: 0;
-}
-
 th h3{
   color:white;
+}
+
+
+/*  Shopping bag summary styling */
+
+
+.shoppingbag-summary{ 
+  width: 98%; 
+  border-collapse: collapse; 
 }
 
 .shoppingbag-summary{
@@ -397,14 +406,6 @@ th h3{
   padding:1.5em 2em .5em 2em;
   text-align: left;
 }
-
-/*.shoppingbag-summary td{
-  border-style:dotted; 
-  border-color: #AAA3A3;
-  border-width:0px;
-  border-top-width:0.1em;
-  border-bottom-width:0.1em;
-}*/
 
 .shoppingbag-summary th{
   background-color:#AAA3A3;
@@ -416,15 +417,8 @@ th h3{
   width:5em;
 }
 
-/*  Generic Styling, for Desktops/Laptops */
 
-/*table { 
-  width: 100%; 
-  border-collapse: collapse; 
-}*/
-
-/* Zebra striping */
-.shoppingbag-summary tr:nth-of-type(odd) { 
+.shoppingbag-summary tr:nth-of-type(odd) {  /* colored strips for chart*/
   background: #F6F6F6; 
 }
 .order-summary th { 
@@ -438,71 +432,7 @@ th h3{
 }
 
 
-/*@media only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {*/
 
-
-@media (max-width: 70em) {
-
-  .shoppingbag-summary, .col-6of8{
-    width:100%;
-  }
-
-  .order-summary{
-    margin-top:3em;
-  }
-}
-
-@media (max-width: 43em) {
-
-
-  /* Force table to not be like tables anymore */
-    .shoppingbag-summary table, .shoppingbag-summary thead, .shoppingbag-summary tbody, .shoppingbag-summary th, .shoppingbag-summary td, .shoppingbag-summary tr { 
-    display: inline-block;
-    width:100%; 
-  }
-  
-  /* Hide table headers */
-    .shoppingbag-summary thead tr { 
-    display:none;
-  }
-  
-  .shoppingbag-summary tr { 
-    border: 1px solid #c1c1c1; 
-  }
-  
-  .shoppingbag-summary td { 
-    /* Behave  like a "row" */
-    border: none;
-    border-bottom: 1px solid #eaeaea; 
-    position: relative;
-    padding-left: 45%;
-    padding-top: 0.5em; 
-  }
-  
-    .shoppingbag-summary td:before { 
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 0.5em;
-    left: 0.5em;
-    width: 45%; 
-    padding-right: 0.7em; 
-    white-space: nowrap;
-  }
-
-
-  .shoppingbag-summary select{
-    vertical-align: middle;
-}
-  
-  /* Label the data for the compressed table*/
-  .shoppingbag-summary td:nth-of-type(1):before { content: "Item"; }
-  .shoppingbag-summary td:nth-of-type(2):before { content: ""; }
-  .shoppingbag-summary td:nth-of-type(3):before { content: "Quantity"; }
-  .shoppingbag-summary td:nth-of-type(4):before { content: "Item Price"; }
-  .shoppingbag-summary td:nth-of-type(5):before { content: "Total Price"; }
-}
 
 
 /*Comment section in blog*/
