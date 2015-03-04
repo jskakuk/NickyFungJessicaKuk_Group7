@@ -283,6 +283,7 @@ select{
   width:153px;
   border: 1.5px solid #A18BA4;
   background:transparent;
+  vertical-align: middle;
 }
 
 
@@ -312,6 +313,9 @@ select{
 #processbar-inactive-steps{
   opacity:0.3;
 }
+
+
+/*check out shipping and billing forms*/
 
 .checkout-info-form{
  margin-bottom: 5em;
@@ -386,26 +390,117 @@ th h3{
   color:white;
 }
 
-.shoppingbag-summary  {
+.shoppingbag-summary{
   border-collapse:collapse;
   border-spacing:0;
   margin-right: 0.75em;
+  padding:1.5em 2em .5em 2em;
+  text-align: left;
 }
 
-.shoppingbag-summary td{
+/*.shoppingbag-summary td{
   border-style:dotted; 
   border-color: #AAA3A3;
   border-width:0px;
   border-top-width:0.1em;
   border-bottom-width:0.1em;
-}
+}*/
+
 .shoppingbag-summary th{
   background-color:#AAA3A3;
 }
 
-
 .shoppingbag-summary select{
   margin-bottom: 4.5em;
+  margin-right:0.5em;
+  width:5em;
+}
+
+/*  Generic Styling, for Desktops/Laptops */
+
+/*table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}*/
+
+/* Zebra striping */
+.shoppingbag-summary tr:nth-of-type(odd) { 
+  background: #F6F6F6; 
+}
+.order-summary th { 
+  background: #BC7482; 
+  color: white; 
+}
+
+
+.shoppingbag-summary img{
+  max-width:none; /*ensure that images dont get smaller with screen size*/
+}
+
+
+/*@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {*/
+
+
+@media (max-width: 70em) {
+
+  .shoppingbag-summary, .col-6of8{
+    width:100%;
+  }
+}
+
+@media (max-width: 600px) {
+
+.col-6of8{
+  width:100%;
+}
+
+  /* Force table to not be like tables anymore */
+    .shoppingbag-summary table, .shoppingbag-summary thead, .shoppingbag-summary tbody, .shoppingbag-summary th, .shoppingbag-summary td, .shoppingbag-summary tr { 
+    display: inline-block;
+    width:100%; 
+  }
+  
+  /* Hide table headers */
+    .shoppingbag-summary thead tr { 
+    display:none;
+  }
+  
+  .shoppingbag-summary tr { 
+    border: 1px solid #ccc; 
+  }
+  
+  .shoppingbag-summary td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eaeaea; 
+    position: relative;
+    padding-left: 45%;
+    padding-top: 0.5em; 
+  }
+  
+    .shoppingbag-summary td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0.5em;
+    left: 0.5em;
+    width: 45%; 
+    padding-right: 0.7em; 
+    white-space: nowrap;
+  }
+
+
+  .shoppingbag-summary select{
+    vertical-align: middle;
+}
+  
+  /* Label the data for the compressed table*/
+  .shoppingbag-summary td:nth-of-type(1):before { content: "Item"; }
+  .shoppingbag-summary td:nth-of-type(2):before { content: ""; }
+  .shoppingbag-summary td:nth-of-type(3):before { content: "Quantity"; }
+  .shoppingbag-summary td:nth-of-type(4):before { content: "Item Price"; }
+  .shoppingbag-summary td:nth-of-type(5):before { content: "Total Price"; }
 }
 
 
