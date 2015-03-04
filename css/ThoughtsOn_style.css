@@ -492,11 +492,8 @@ th h3{
 }
 
 .blog-comment-button a {
+  
   float:right;
-  margin-right:auto;
-  margin-left:auto;
-  padding-left: 4rem;
-  padding-right: 4rem;
 }
 
 

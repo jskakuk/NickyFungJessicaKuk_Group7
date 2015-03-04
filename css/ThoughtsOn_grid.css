@@ -29,6 +29,13 @@
 		width:4em;
 		margin-bottom: 2em;
 	}
+	.blog-comment-button a {
+		margin-left:auto;
+		margin-right: auto;
+		width:100%;
+		text-align: center;
+		
+	}
 }
 
 .col-2of8{
