@@ -1,3 +1,5 @@
+/* mason img gallery*/
+
 $(document).ready(function(){
   var image=new Array();
   var current=0;
@@ -35,6 +37,8 @@ $(document).ready(function(){
   });
 
 })
+
+/* wine glass img gallery*/
 
 $(document).ready(function(){
   var image=new Array();
