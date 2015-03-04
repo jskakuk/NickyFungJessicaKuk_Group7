@@ -58,6 +58,38 @@ a:hover{
   color: #BC7482
 }
 
+
+a.round-button-left, a.round-button-right {
+  font-size:2em;
+  opacity: 0.8;
+  color:#BC7482;
+  background: #464646;
+  box-shadow: 0 0 3px gray;
+  background-color: white;
+  border: 1px solid #f5f5f5;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  border-radius: 50%;
+  text-align:center;
+  text-decoration:none;
+  position: absolute;
+  z-index: 1;
+}
+
+#left, #left2{
+    margin: 13% 0 0 0.5em;
+}
+
+#right, #right2{
+  margin: 13% 0 0 -3.3em;
+}
+
+
+a.round-button-left:hover, a.round-button-right:hover{
+  opacity:0.3;
+}
+
 /* Type container styling*/
 
 .home-text-group, .home-text-group-2, .home-text-group-3, .white-info-container{
@@ -166,6 +198,10 @@ img{
   margin-right:3em;
   margin-bottom:0.5em;
   float:left;
+}
+
+.product-details-content-image img{
+  position: relative;
 }
 
 
