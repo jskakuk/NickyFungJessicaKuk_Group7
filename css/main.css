@@ -94,6 +94,7 @@ ul {
 
 li {
   float:left;
+  margin-left: 1.5em;
 }
 
 nav a{

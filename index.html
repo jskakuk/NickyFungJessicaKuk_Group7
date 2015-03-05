@@ -51,7 +51,7 @@
           <p>Thoughts On will use two typography types: Josefin Slab and Roboto Condensed. Generally speaking, Josefin Slab will be used for headings and Roboto Condensed will be used for body texts.</p>
 
           <h3>CSS selector:</h3>
-          <p>'h1' , 'h2' , 'h3' , 'p' , 'a'</p>
+          <p>'h1' , 'h2' , 'h3' , 'p' , 'a' , 'ul' , 'li' </p>
           
           <h3>Sample code:</h3>
           <code>&lt;h1&gt;Ready Made Products&lt;/h1&gt;</code>
@@ -59,6 +59,8 @@
           <code>&lt;h3&gt;Inpire, Express, Craft&lt;/h3&gt;</code>
           <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
           <code>&lt;a href="#"&gt;This is a link.&lt;/a&gt;</code>
+          <code>&lt;ul&gt;This is a list.&lt;/a&gt;</code>
+          <code>&lt;li&gt;This is a list.&lt;/a&gt;</code>
           
           <h3>Rendered element:</h3>
             <div class="item-example">
@@ -75,6 +77,12 @@
                 <span class="type-label">14px</span></p>
                 <p> <a href="#">This is a link</a>
                 <span class="type-label">14px</span>
+            
+                <li> list #1</li>
+                <li> list #2</li>
+                <li> list #3</li>
+                
+                <span class="type-label">14px</span>
               </p>
             </div>
           <hr>
@@ -89,11 +97,12 @@
           <p>There are two different types of lines used: solid and dotted.</p>
           
           <h3>CSS selector:</h3>
-          <p>'hr' , '.dotted-line hr'</p>
+          <p>'hr' , '.dotted-line hr' , '.solid-lines-text-body hr' , '.dotted-line-separator hr' , '.dotted-line-footer hr'</p>
           
           <h3>Sample code:</h3>
-          <code>&lt;hr&gt;</code>
-          
+          <code>&lt;div class="solid-lines-text-body"&gt;&lt;hr&gt;&lt;/div&gt;</code> 
+          <code>&lt;div class="dotted-lines-text-body"&gt;&lt;hr&gt;&lt;/div&gt;</code> 
+
           <h3>Rendered element:</h3>
           <div class="rendered-solid-lines"><hr></div>
           <div class="rendered-dotted-lines"><hr></div>
@@ -111,10 +120,17 @@
           <p>There are two button types. This first kind is rectangular and when pressed, the state of the button changes from a hollow, outlined state to a solid fill in. <br>The second type are left and right arrowed buttons used to go through product images in the detailed product view page.</p>
           
           <h3>CSS selector:</h3>
-          <p>'a.button' , 'a.button:hover' , 'a.button:focus' , 'a.round-button' , 'a.round-button:hover' , 'a.round-button:focus'</p>
+          <p>'a.button' , 'a.button:hover' , 'a.button:focus' , 'a.round-button' , 'a.round-button:hover' , 'a.round-button:focus' , '.checkout-buttons' , '.order-summary .button' ,<br>
+           '#blog-comment-button a' , '#blog-comment-button a' , '#purchase-button a' ,</p>
           
           <h3>Sample code:</h3>
           <code>&lt;a class="button" href="#"&gt;SEE MORE&lt;/a&gt;</code>
+
+          <code>&lt;a class="round-button-left" id="left"
+          &gt;<&lt;/a&gt;</code>
+
+          <code>&lt;a class="round-button-right" id="right"&gt;>&lt;/a&gt;</code>
+
           <h3>Rendered element:</h3>
           <a class="button" href="#">DEFAULT BUTTON</a>
           <a class="round-button" href="#">&lt;</a>
