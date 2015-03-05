@@ -152,8 +152,12 @@ a.round-button-left:hover, a.round-button-right:hover{
 
 /* Specific type container styling*/
 
-.home-text-group-2 h1, .home-text-group-3 h1, .white-info-container h1{
+.home-text-group-2 h1, .home-text-group-3 h1{
   margin-top: 5em;
+}
+
+.white-info-container h1{
+  margin-top: 2.5em;
 }
 
 
@@ -220,7 +224,7 @@ img{
   width:100%;
   border-top: 1.7px dotted;
   background:transparent;
-  margin: 6em auto 2em auto;
+  margin: 3em auto 2em auto;
   opacity:0.5;
 }
 
@@ -349,7 +353,7 @@ select{
   color:white;
 }
       
-#processbar-inactive-steps{
+.processbar-inactive-steps{
   opacity:0.3;
 }
 
