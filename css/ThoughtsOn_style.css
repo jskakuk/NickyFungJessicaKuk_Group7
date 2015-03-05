@@ -95,6 +95,7 @@ a.round-button-left:hover, a.round-button-right:hover{
 .home-text-group, .home-text-group-2, .home-text-group-3, .white-info-container{
   display:inline-block;
   background-color: white;
+  border-top: 1px solid #CDC5C1;
   width:580px;
   height:758px;
   height: auto;  /* img height adjusts accordingly*/
