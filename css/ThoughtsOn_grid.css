@@ -120,6 +120,10 @@
 		padding: 0 1em 4em 1em!important; /* decreases padding of white space*/
 	}
 
+	.bio-content{
+		padding-bottom: 0em !important; /* decreases padding of white space of bio page*/
+	}
+
 	.home-text-group h1, .home-text-group-2 h1, .home-text-group-3 h1{
 		margin-top: 3em !important;
 	}

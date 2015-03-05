@@ -138,7 +138,10 @@ a.round-button-left:hover, a.round-button-right:hover{
   max-width: 100%;
   height:auto;
   display: inline-block;
-  padding:2em;
+}
+
+.bio-content img{
+ padding-bottom:2em;
 }
 
 
