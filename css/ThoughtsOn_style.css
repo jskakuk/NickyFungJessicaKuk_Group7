@@ -65,8 +65,8 @@ a:hover{
 }
 
 .home-text-group-3 p{
-  margin-top: 11em;
-  margin-bottom:-8.3em;
+  margin-top: 10em;
+  padding-bottom: 3.2em;
 }
 
 .blog-content p, .bio-content p, .product-content p, .product-details-content p{
@@ -91,6 +91,7 @@ a:hover{
   margin-left:-0.25em;
   margin-top:-0.25em;
   }
+
 
 .white-info-container, .footer{
   width:1160px;
@@ -239,6 +240,7 @@ a.round-button-left, a.round-button-right {
   position: absolute;
   z-index: 1;
 }
+
 
 #left, #left2{
     margin: 13% 0 0 0.5em;
