@@ -389,7 +389,7 @@ li img:hover {
 }
 
 .nav-icons{
-  display:inline-block;
+  float:right;
   width:3.5em;
   margin:1.9em 2em 0 -4em;
 }

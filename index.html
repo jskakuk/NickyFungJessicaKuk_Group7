@@ -145,16 +145,23 @@
           <p>'form' , 'input' , '.input-wrapper' , 'select', 'label'</p>
           
           <h3>Sample code:</h3>
-          <code>&lt;div class="input-wrapper"&gt;
-              <p> &lt;label for="form-country"&gt;Country:&lt;/label&gt;</p>
-              <p>&lt;select&gt; </p>
-              <p>&lt;option value="Andorra"&gt;Andorra&gt;&lt;/option&gt;</p>
-              <p>&lt;option value="Afghanistan"&gt;Afghanistan&gt;&lt;/option&gt;</p>
-              <p>&lt;option value="Argentina"&gt;Argentina&gt;&lt;/option&gt;</p>
-              <p>&lt;/select&gt;</p>
-              &lt;/div&gt;
+          <code>&lt;label for="contry"&gt;Province&lt;/label&gt;
+            <p>&lt;select id="province"&gt;</p>
+            <p>&lt;option&gt;Alberta&lt;/option&gt;</p>
+            <p>&lt;option&gt;British Columbia&lt;/option&gt;</p>
+            <p>&lt;option&gt;Manitobal&lt;/option&gt;</p>
+            <p>&lt;option&gt;New Brunswick&lt;/option&gt;</p>  
+            <p>&lt;option&gt;Newfoundland&lt;/option&gt;</p>
+            <p>&lt;option&gt;Nova Scotia&lt;/option&gt;</p>
+            <p>&lt;option&gt;Ontario&lt;/option&gt;</p>
+            <p>&lt;option&gt;Prince Edward Island&lt;/option&gt;</p>
+            <p>&lt;option&gt;Quebec&lt;/option&gt;</p>
+            <p>&lt;option&gt;Saskatchewan&lt;/option&gt;</p>    
+          &lt;/select&gt;
+
             </code>
-          
+
+      
           <h3>Rendered element:</h3>
             <div class="input-wrapper">
               <label for="form-country">Country:</label>
@@ -184,26 +191,33 @@
           <p>Forms are used when users going through the purchase process and have to enter their shipping and billing info.</p>
           
           <h3>CSS selector:</h3>
-          <p>'form' , 'input' , '.input-wrapper' , '.check-boxes input' , 'select', 'label'</p>
+          <p>'.checkout-info-form' , '.billing-info-form input' , '.checkout-info-form input' , '.billing-info-form input' ,<br>
+          '.billing-info-form select' , '.check-boxes' , 'select', '.checkout-info-form select' , '.billing-info-form select' , '.shoppingbag-summary select' , '.checkout-info-form select' , 'label'</p>
           
           <h3>Sample code:</h3>
-            <code>&lt;section id="forms"&gt;
+            <code>&lt;form class="checkout-info-form"&gt;
               <p>...</p>
               &lt;/form&gt;</code>
-            <code>&lt;input type="checkbox" name="same-billing-info" value="same-billing-info"&gt;</code>
-            <code>&lt;div class="input-wrapper"&gt;
-              <p> &lt;label for="form-fname"&gt;First Name:&lt;/label&gt;</p>
-              <p>&lt;input type="text" id="form-fname" placeholder="Jane"&gt; </p>
-              &lt;/div&gt;
-            </code>
-            <code>&lt;div class="input-wrapper"&gt;
-              <p> &lt;label for="form-country"&gt;Country:&lt;/label&gt;</p>
-              <p>&lt;select&gt; </p>
-              <p>&lt;option value="Andorra"&gt;Andorra&gt;&lt;/option&gt;</p>
-              <p>&lt;option value="Afghanistan"&gt;Afghanistan&gt;&lt;/option&gt;</p>
-              <p>&lt;option value="Argentina"&gt;Argentina&gt;&lt;/option&gt;</p>
-              <p>&lt;/select&gt;</p>
-              &lt;/div&gt;
+
+            <code>&lt;div class="col-4of8"&gt;
+            <p>&lt;/label for ="first-name"&gt;First Name&lt;/label&gt;</p>
+            <p>&lt;input type="text" id=first-name" placeholder="Jane"&gt;</p>
+            &lt;/div&gt;</code>
+
+            <code>&lt;label for="contry"&gt;Province&lt;/label&gt;
+            <p>&lt;select id="province"&gt;</p>
+            <p>&lt;option&gt;Alberta&lt;/option&gt;</p>
+            <p>&lt;option&gt;British Columbia&lt;/option&gt;</p>
+            <p>&lt;option&gt;Manitobal&lt;/option&gt;</p>
+            <p>&lt;option&gt;New Brunswick&lt;/option&gt;</p>  
+            <p>&lt;option&gt;Newfoundland&lt;/option&gt;</p>
+            <p>&lt;option&gt;Nova Scotia&lt;/option&gt;</p>
+            <p>&lt;option&gt;Ontario&lt;/option&gt;</p>
+            <p>&lt;option&gt;Prince Edward Island&lt;/option&gt;</p>
+            <p>&lt;option&gt;Quebec&lt;/option&gt;</p>
+            <p>&lt;option&gt;Saskatchewan&lt;/option&gt;</p>    
+          &lt;/select&gt;
+
             </code>
           
           <h3>Rendered element:</h3>
@@ -391,29 +405,36 @@
           <p>'nav' , 'nav a' , 'nav a:hover' , 'nav a:active' ,  'nav li img' , 'nav li img:hover' , '.navbar-icons-group' , '.nav-icons' </p>
           
           <h3>Sample code:</h3>
-          <code>&lt;ul&gt;
-            <p>&lt;li&gt;&lt;a href="#who-are-we"&gt;WHO ARE WE?&lt;/a&gt;&lt;/li&gt;</p>
-            <p>&lt;li&gt;&lt;a href="#ready-mades"&gt;READY MADES&lt;/a&gt;&lt;/li&gt;</p> &lt;/ul&gt;</code>
-          <code>&lt;div class="navbar-icons-group"&gt;
-            <p>&lt;a href="#keygroupings" class="nav-icons"&gt;</p>
-            <p>&lt;img src="images/shoppingbag.png"height="32" width="32" alt="shopping icon placeholder"&gt;&lt;/a&gt;</p>
-            &lt;/div&gt;</code>
+
+          <code>&lt;nav class="grid"&gt;</code>
+          <code>&lt;div class="col-2of10"&gt;
+          &lt;div class="nav-icons-group"&gt;
+          <p>&lt;a href="ThoughtsOn,html" class="nav-icons"&gt;&lt;img src="images/home/home_logo.jpg&gt;&lt;/a&gt;
+          <p>&lt;div class="col-2of10"&gt;</p>
+          <p>&lt; a href="ThoughtsOn_WhoAreWe.html" class="menu-items"&gt;WHO ARE WE?&lt;/a&gt;</p>
           
+          &lt;div class="col-2of10"&gt;
+          <p>&lt; a href="ThoughtsOn_ReadyMades.html" class="menu-items"&gt;OUR PRODUCTS&lt;/a&gt;</p>
+
+          &lt;div class="col-2of10"&gt;
+          <p>&lt; a href="ThoughtsOn_Blog.html" class="menu-items"&gt;WHAT'S NEW&lt;/a&gt;</p>
+          </code>
+
           <h3>Rendered element:</h3>
           <exampleNavBar>
             <nav>
               <ul>
-                <li><a href ="#keygroupings"><img src="images/logo.png" height="50" width="100" alt="logo placeholder"></a></li>
+                <li>
+                  <a href ="#keygroupings"><img src="images/home/home_logo.png" height="50" width="100" alt="logo placeholder"></a></li>
                 <li><a href="#keygroupings">WHO ARE WE?</a></li>
                 <li><a href="#keygroupings">READY MADES</a></li>
                 <li><a href="#keygroupings">CUSTOMIZE</a></li>
                 <li><a href="#keygroupings">FAQ</a></li>
                 <li>
                   <div class="navbar-icons-group">
-                    <a href="#keygroupings" class="nav-icons"><img src="images/shoppingbag.png"height="32" width="32" alt="shopping icon placeholder"></a>
-                   <a href="https://facebook.com" class="nav-icons"><img src="images/facebook.png"height="32" width="32" alt="facebook icon placeholder"></a>
-                   <a href="https://twitter.com" class="nav-icons"><img src="images/twitter.png"height="32" width="32" alt="twitter icon placeholder"></a>
-                   <a href="https://pinterest.com" class="nav-icons"><img src="images/pinterest.png"height="32" width="32" alt="pinterest icon placeholder"></a>
+                    <a href="#keygroupings" class="nav-icons"><img src="images/icons/icon_shoppingbag.png"height="32" width="32" alt="shopping icon placeholder"></a>
+                   <a href="https://facebook.com" class="nav-icons"><img src="images/icons/icon_facebook.png" height="32" width="32" alt="facebook icon placeholder"></a>
+                   <a href="https://pinterest.com" class="nav-icons"><img src="images/icons/icon_pinterest.png" height="32" width="32" alt="pinterest icon placeholder"></a>
                   </div>
                 </li>
               </ul> 
