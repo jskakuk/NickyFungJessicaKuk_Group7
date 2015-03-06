@@ -1,6 +1,4 @@
-/*style stylesheet*/
-
-/* Type styling*/
+/* GENERAL TYPE STYLING*/
 
 body, nav a{
   font-family: 'Roboto Condensed', sans-serif;
@@ -34,7 +32,6 @@ h3, a.button{
   letter-spacing: 1px;
 }
 
-
 p, li{
   margin-top: 3em;
   line-height: 1.3em;
@@ -43,7 +40,6 @@ p, li{
 li{
   margin-top: 0.75em;
 }
-
 
 em{
   color: #BC7482;
@@ -58,40 +54,28 @@ a:hover{
   color: #BC7482
 }
 
- /* buttons styling*/
+/* SPECIFIC TYPE STYLING*/
 
-a.round-button-left, a.round-button-right {
-  font-size:2em;
-  opacity: 0.8;
-  color:#BC7482;
-  background: #464646;
-  box-shadow: 0 0 3px gray;
-  background-color: white;
-  border: 1px solid #f5f5f5;
-  width:40px;
-  height:40px;
-  line-height:40px;
-  border-radius: 50%;
-  text-align:center;
-  text-decoration:none;
-  position: absolute;
-  z-index: 1;
+.home-text-group-2 h1, .home-text-group-3 h1{
+  margin-top: 5em;
 }
 
-#left, #left2{
-    margin: 13% 0 0 0.5em;
+.white-info-container h1{
+  margin-top: 2.5em;
 }
 
-#right, #right2{
-  margin: 13% 0 0 -3.3em;
+.home-text-group-3 p{
+  margin-top: 11em;
+  margin-bottom:-8.3em;
+}
+
+.blog-content p, .bio-content p, .product-content p, .product-details-content p{
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 
-a.round-button-left:hover, a.round-button-right:hover{
-  opacity:0.3;
-}
-
-/*container styling*/
+/* INFO CONTAINER STYLING*/
 
 .home-text-group, .home-text-group-2, .home-text-group-3, .white-info-container{
   display:inline-block;
@@ -116,11 +100,13 @@ a.round-button-left:hover, a.round-button-right:hover{
   margin-right:auto;
 }
 
-
 .blog-content, .bio-content, .product-content, .product-details-content, .suggested-product-images, .thankyou-content{
   text-align: left;
   padding: 1em;
+}
 
+.product-content {
+  margin-top:2em;
 }
 
 .bio-content{
@@ -141,8 +127,6 @@ a.round-button-left:hover, a.round-button-right:hover{
   margin-bottom:2em;
 }
 
-
-
 .footer-content{
   color:white;
   opacity:0.5;
@@ -151,36 +135,13 @@ a.round-button-left:hover, a.round-button-right:hover{
 }
 
 
-/* Specific type container styling*/
-
-.home-text-group-2 h1, .home-text-group-3 h1{
-  margin-top: 5em;
-}
-
-.white-info-container h1{
-  margin-top: 2.5em;
-}
-
-
-.home-text-group-3 p{
-  margin-top: 11em;
-  margin-bottom:-8.3em;
-}
-
-.blog-content p, .bio-content p, .product-content p, .product-details-content p{
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-
-
-/* Image stlying: home*/
+/* IMAGE STYLING */
 
 img{
   height: auto;  /* img height adjusts accordingly*/
   max-width: 100%;
-
 }
+
 .home-theme-image{
   margin-top:-0.25em;
   margin-left:-0.20em;
@@ -216,10 +177,8 @@ img{
 }
 
 
+/* LINE STYLING */
 
-
-
-/* Line stlying*/
 .solid-lines-text-body hr{
   height: 0.5px;
   width:120px;
@@ -240,9 +199,90 @@ img{
   width:100%;
 }
 
+/* BUTTONS STYLING */
+
+a.button{
+  display: inline-block;
+  padding: 0.65em 0.75em 0.5em 0.75em;
+  margin:1em 0.2em 0 0.2em;
+  outline: #BC7482 solid medium;
+  text-decoration: none;
+  color:#BC7482;
+  background: #464646;
+  background-color: white;
+  border: 1px solid #f5f5f5;
+
+  -webkit-transition: background-color 0.7s ease-out;
+  transition: background-color 0.s ease-out;
+}
+
+a.button:hover, a.button:focus {
+  background-color: #BC7482;
+  color: white;
+  text-decoration: none;
+}
+
+a.round-button-left, a.round-button-right {
+  font-size:2em;
+  opacity: 0.8;
+  color:#BC7482;
+  background: #464646;
+  box-shadow: 0 0 3px gray;
+  background-color: white;
+  border: 1px solid #f5f5f5;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  border-radius: 50%;
+  text-align:center;
+  text-decoration:none;
+  position: absolute;
+  z-index: 1;
+}
+
+#left, #left2{
+    margin: 13% 0 0 0.5em;
+}
+
+#right, #right2{
+  margin: 13% 0 0 -3.3em;
+}
+
+a.round-button-left:hover, a.round-button-right:hover{
+  opacity:0.3;
+}
+
+select{ /* drop down */
+  margin-right:3em;
+  width:153px;
+  border: 1.5px solid #A18BA4;
+  background:transparent;
+  vertical-align: middle;
+}
+
+/* COMMENT BOX STYLING */
+
+.comment-box textarea {
+
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0.5em 0.8em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  border-radius: 5px;
+  border: 1.5px solid #A18BA4;
+}
+
+#blog-comment-button a, #payment-button a, #purchase-button a{
+  float:right;
+  margin-top: 2em;
+}
 
 
-/* Navigation bar styling*/
+/* NAV BAR STYLING */
 
  nav a{
   font-family: 'Josefin Slab', serif;
@@ -268,12 +308,10 @@ header a:hover{
   color:#BE7684;
 }
 
-
 a.menu-item-selected{
   text-decoration: underline;
   color:#5E3149;
 }
-
 
 .nav-icons {
   display:inline-block;
@@ -289,7 +327,6 @@ a.menu-item-selected{
   transition: opacity 0.35s;
 }
 
-
 .nav-icons img:hover, .suggested-product-images img:hover{
   opacity: 0.3;
 }
@@ -303,41 +340,8 @@ a.menu-item-selected{
   opacity:0.9;
 }
 
-/* Buttons stlying*/
 
-a.button{
-  display: inline-block;
-  padding: 0.65em 0.75em 0.5em 0.75em;
-  margin:1em 0.2em 0 0.2em;
-  outline: #BC7482 solid medium;
-  text-decoration: none;
-  color:#BC7482;
-  background: #464646;
-  background-color: white;
-  border: 1px solid #f5f5f5;
-
-  -webkit-transition: background-color 0.7s ease-out;
-  transition: background-color 0.s ease-out;
-}
-
-a.button:hover, a.button:focus {
-  background-color: #BC7482;
-  color: white;
-  text-decoration: none;
-}
-
-/* Dropdown styling*/
-
-select{
-  margin-right:3em;
-  width:153px;
-  border: 1.5px solid #A18BA4;
-  background:transparent;
-  vertical-align: middle;
-}
-
-
-/*check out process bar styling*/
+/* CHECK OUT PROCESS BAR STYLING */
 
 .processbar{
   width:1160px;
@@ -364,8 +368,7 @@ select{
   opacity:0.3;
 }
 
-
-/*check out shipping and billing forms*/
+/* CHECK OUT: SHIPPING AND BILLING FORMS STYLING*/
 
 .checkout-info-form{
  margin-bottom: 5em;
@@ -395,10 +398,11 @@ select{
   width:88%;
 } 
 
-
 .check-boxes{
   float:left;
 }
+
+/* CHECK OUT: PAYMENT OPTIONS STYLING*/
 
 .card-option{
   margin-top: 5em;
@@ -415,8 +419,7 @@ select{
   margin-right:1.9em;
 }
 
-
-/*order summary(table) styling*/
+/* ORDER SUMMARY (TABLE) STYLING*/
 
 .order-summary {
   border-collapse:collapse;
@@ -443,9 +446,7 @@ th h3{
   color:white;
 }
 
-
-/*  Shopping bag summary styling */
-
+/* SHOPPING BAG SUMMARY STYLING*/
 
 .shoppingbag-summary{ 
   width: 98%; 
@@ -460,7 +461,6 @@ th h3{
   text-align: left;
 }
 
-
 .shoppingbag-summary th{
   background-color:#AAA3A3;
 }
@@ -471,7 +471,6 @@ th h3{
   width:5em;
 }
 
-
 .shoppingbag-summary tr:nth-of-type(odd) {  /* colored strips for chart*/
   background: #F6F6F6; 
 }
@@ -480,7 +479,6 @@ th h3{
   color: white; 
 }
 
-
 .shoppingbag-summary img{
   max-width:none; /*ensure that images dont get smaller with screen size*/
 }
@@ -488,29 +486,6 @@ th h3{
 
 
 
-
-/*Comment section in blog*/
-
-.comment-box textarea {
-
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  padding: 0.5em 0.8em;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background: transparent;
-  border-radius: 5px;
-  border: 1.5px solid #A18BA4;
-
-
-}
-
-#blog-comment-button a, #payment-button a, #purchase-button a{
-  float:right;
-  margin-top: 2em;
-}
 
 
 

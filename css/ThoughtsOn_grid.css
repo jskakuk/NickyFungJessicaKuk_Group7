@@ -74,6 +74,14 @@
 	.product-content img, .suggested-product-images img{
 	width:100%;
 	}
+
+	.product-content img{
+		margin-top: 3em !important;
+	}
+
+	.product-content .button{
+		margin-top: 1em !important;
+	}
 }
 
 
