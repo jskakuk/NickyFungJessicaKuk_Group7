@@ -23,7 +23,7 @@ h2{
   margin-top:1em;
 }
 
-h3, a.button{
+h3, a.button, th{
   font-family: 'Josefin Slab', serif;
   font-size: 1.28571429em; /* 18 px */
   font-weight: 500;
@@ -100,6 +100,8 @@ a:hover{
   margin-left: auto;
   margin-right:auto;
 }
+
+
 
 .blog-content, .bio-content, .product-content, .product-details-content, .suggested-product-images, .thankyou-content{
   text-align: left;
@@ -252,6 +254,13 @@ a.round-button-left, a.round-button-right {
 
 a.round-button-left:hover, a.round-button-right:hover{
   opacity:0.3;
+}
+
+.product-content a {
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 select{ /* drop down */
@@ -440,13 +449,11 @@ td{
 }
 
 th{
-  padding:0.15em 1em;
+  padding:1em 1em;
   background-color:#BC7482;
-}
-
-th h3{
   color:white;
 }
+
 
 /* SHOPPING BAG SUMMARY STYLING*/
 

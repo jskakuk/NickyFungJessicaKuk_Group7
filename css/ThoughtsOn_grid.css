@@ -85,7 +85,7 @@
 }
 
 
-@media (max-width:59em){
+@media (max-width:60em){
 	.blog-content-text, .product-details-content-text{
 		float:left; /*text wraps arnd image until 59, then floats left*/
 	}
@@ -212,8 +212,6 @@
 
 
 @media (max-width:35em){
-
-
 	.dotted-line-separator hr{
 	  margin-top: 3em !important;
 	  margin-bottom: 1em !important;
