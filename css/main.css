@@ -376,6 +376,12 @@ exampleNavBar nav a{
   padding: 1em 0.5em 1em 1em;
 }
 
+exampleNavBar nav img{
+
+  margin-top:-5em;
+
+}
+
 li img {
   margin:-1em 3em 0 1em;
 }
@@ -385,13 +391,15 @@ li img:hover {
 }
 
 .navbar-icons-group{
-    float: left;
+    float: right;
 }
 
 .nav-icons{
   float:right;
-  width:3.5em;
-  margin:1.9em 2em 0 -4em;
+  width:1.75em;
+ 
+ margin-right:auto;
+ margin-left:auto;
 }
 
 /* KEY ELEMENTS: GROUP TEXT EXAMPLE */

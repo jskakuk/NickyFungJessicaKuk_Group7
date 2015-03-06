@@ -425,11 +425,10 @@
             <nav>
               <ul>
                 <li>
-                  <a href ="#keygroupings"><img src="images/home/home_logo.png" height="50" width="100" alt="logo placeholder"></a></li>
+                  <a href ="#keygroupings"><img src="images/home/home_logo.png" height="100" width="200" alt="logo placeholder"></a></li>
                 <li><a href="#keygroupings">WHO ARE WE?</a></li>
-                <li><a href="#keygroupings">READY MADES</a></li>
-                <li><a href="#keygroupings">CUSTOMIZE</a></li>
-                <li><a href="#keygroupings">FAQ</a></li>
+                <li><a href="#keygroupings">OUR PRODUCTS</a></li>
+                <li><a href="#keygroupings">WHAT'S NEW?</a></li>
                 <li>
                   <div class="navbar-icons-group">
                     <a href="#keygroupings" class="nav-icons"><img src="images/icons/icon_shoppingbag.png"height="32" width="32" alt="shopping icon placeholder"></a>
@@ -451,16 +450,16 @@
           
           <h3>Sample code:</h3>
             <code>&lt;h1&gt;WHO ARE WE?&lt;/h1&gt;</code>
-            <code>&lt;h3&gt;2013&lt;/h3&gt;</code>
-            <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
-            <code>&lt;a class="button" href="#"&gt;SEE MORE&lt;/a&gt;</code>
+            <code>&lt;h3&gt;crafters by day&lt;/h3&gt;</code>
+            <code>&lt;p&gt;Thoughts On is a customized novelty crafting company with a passion for typography and design on various mediums. Whether it’s etching on glass, painting on canvases or stenciling cards, they work with individuals from start to finish to design and create handmade products that are inspired by people’s thoughts.&lt;/p&gt;</code>
+            <code>&lt;a class="button" href="#"&gt;FIND OUT MORE&lt;/a&gt;</code>
           
           <h3>Rendered element:</h3>
           <exampletextGroup>
             <div class="text-group-example">
               <h1>WHO ARE WE?</h1>
               <div class="solid-lines-text-body"><hr></div>
-              <h3>2013</h3>
+              <h3>crafters by day</h3>
               <p>Thoughts On is a customized novelty crafting company with a passion for typography and design on various mediums. Whether it’s etching on glass, painting on canvases or stenciling cards, they work with individuals from start to finish to design and create handmade products that are inspired by people’s thoughts.</p>
               <h4>&#9993; &nbsp; info@thoughtson.ca</h4>
               <a class="button" href="#">FIND OUT MORE</a>
@@ -473,23 +472,24 @@
           <p>As an example, this is what the <strong>product listing elements</strong> would look like on Thoughts On's website.</p>
           
           <h3>CSS selector:</h3>
-          <p>'h3' , 'img' , 'img a' , 'img a:hover' , 'img a:active'</p>
+          <p>'product-content p' , 'product-content-image' , 'product-content-text' , 'h2' , 'img' , 'img a' , 'img a:hover' , 'img a:active'</p>
           <h3>Sample code:</h3>
-            <code>&lt;div class="product-listing"&gt;
-              <p>&lt;a href ="#"&gt;</p>
-                <p>&lt;images/product-listing-placeholder.png"height="100" width="160" alt="product image placeholder"&gt;</p>
-              <p>&lt;/a&gt;</p>
-            &lt;/div&gt;
+            <code>&lt;div class="product-content&gt;
+              <p>&lt;div class="product-content-image"&gt;</p>
+              <p>&lt;img src="images/product_listing/mason_jar.jpg" height="200" width="250"
+                <br>
+              <p>alt="product #1: designer life mason jar&gt;</p>
+              &lt;/div&gt;<br>
+
+              &lt;div class="product-content-text"&gt;
+              <p>&lt;h2&gt;Design Life Mason Jar&lt;/h2&gt;</p>
+              <p>&lt;p&gt;&lt;strong&gt;$20.00&lt;/strong&gt;&lt;/p&gt;</p>
+              <p>&lt;a class="button" href="ThoughtsOn_MasonJar.html"&gt;&lt;VIEW DETAIL&gt;&lt;/a&gt;</p>
+              &lt;/div&gt;</code>
+              
           </code>
-          <code>&lt;div class="descriptions"&gt;
-            <p>&lt;h3&gt;&lt;strong&gt;PRODUCT NAME&lt;/strong&gt;&lt;br&gt;$$$&lt;/h3&gt;</p>
-            &lt;/div&gt;
-          </code>
-          <code>&lt;div class="view-details-button"&gt;
-            <p>&lt;a class="button" href="#"&gt;VIEW DETAILS&lt;&gt;</p>
-            &lt;/div&gt;
-          </code>
-          
+
+        
           <h3>Rendered element:</h3>
           <exampleProductListing>
             <div class="product-listing-example">
@@ -541,10 +541,15 @@
           <p>As an example, this is what the <strong>checkout process bar</strong> would look like on Thoughts On's website.</p>
           
           <h3>CSS selector:</h3>
-          <p>'#shipping-info' , '#billing-info' , '#complete' , 'h3' </p>
+          <p>'.checkout-info-form input' , '.checkout-info-form select' , 'billing-info-form input' , 'billing-info-form select' , '.processbar-info-container h3' , <br>
+          'processbar-info-container' , 'processbar-inactive-steps' , '.processbar' , '#processbar-inactive-steps'</p>
+
           <h3>Sample code:</h3>
-            <code>&lt;div id="shipping-info"&gt;&lt;h3&gt;&lt;strong&gt;1. BILLING INFO &lt;/strong&gt;&lt;/h3&gt;&lt;/div&gt;</code>
+            <code>&lt;div class="processbar-info-container"&gt;
+              <p>&lt;h3&gt;&lt;strong&gt;1. SHIPPING INFO &lt;/strong&gt;&lt;/h3&gt;&lt;/div&gt;</p></code>
           
+
+
           <h3>Rendered element:</h3>
           <exampleCheckoutProcessBar>
               <div id="shipping-info"><h3><strong>1. SHIPPING INFO</strong></h3></div>
