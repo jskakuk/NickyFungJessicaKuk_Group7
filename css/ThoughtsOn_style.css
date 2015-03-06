@@ -58,6 +58,7 @@ a:hover{
   color: #BC7482
 }
 
+ /* buttons styling*/
 
 a.round-button-left, a.round-button-right {
   font-size:2em;
@@ -115,9 +116,6 @@ a.round-button-left:hover, a.round-button-right:hover{
   margin-right:auto;
 }
 
-.footer{
-  margin-bottom:2em;
-}
 
 .blog-content, .bio-content, .product-content, .product-details-content, .suggested-product-images, .thankyou-content{
   text-align: left;
@@ -125,6 +123,13 @@ a.round-button-left:hover, a.round-button-right:hover{
 
 }
 
+.bio-content{
+  width:530px;
+  max-width: 100%;
+  height:auto;
+  display: inline-block;
+  padding-bottom:0;
+}
 
 .blog-content-text, .product-details-content-text{
   padding-top: 1em;
@@ -132,17 +137,10 @@ a.round-button-left:hover, a.round-button-right:hover{
   height:auto; /* img height adjusts accordingly*/
 }
 
-
-.bio-content{
-  width:530px;
-  max-width: 100%;
-  height:auto;
-  display: inline-block;
+.footer{
+  margin-bottom:2em;
 }
 
-.bio-content img{
- padding-bottom:2em;
-}
 
 
 .footer-content{
@@ -171,6 +169,7 @@ a.round-button-left:hover, a.round-button-right:hover{
 
 .blog-content p, .bio-content p, .product-content p, .product-details-content p{
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 
@@ -204,13 +203,18 @@ img{
 .blog-content-image img, .bio-content-image img, .product-details-content-image img {
   margin-top:1em;
   margin-right:3em;
-  margin-bottom:0.5em;
+  margin-bottom:0.75em;
   float:left;
 }
 
 .product-details-content-image img{
   position: relative;
 }
+
+.bio-content img{
+ padding-bottom:2em;
+}
+
 
 
 
@@ -273,7 +277,7 @@ a.menu-item-selected{
 
 .nav-icons {
   display:inline-block;
-  width:12%;
+  width:10%;
   margin-top:1.8em;
   margin-right:1.5em;
   padding:0;
