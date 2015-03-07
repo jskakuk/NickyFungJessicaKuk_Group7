@@ -1,19 +1,23 @@
-<!--IAT 339, D101, Jessica Kuk, 301139384-->
-
 <!DOCTYPE html>
 <html>
 
-<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-
-<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
 
   <head>
     <meta charset="utf-8">
     <title>Style Guide for Thoughts On</title>
+
+     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+    <link href='http://fonts.googleapis.com/css?family=Gravitas+One' rel='stylesheet' type='text/css'><!--used for logo in nav-->
+
+
     <link href="css/main.css" rel="stylesheet">
   </head>
+
   <body>
-    <styleGuideNavBar>
+    <div class="style-guide-nav">
       <h1>Style Guide for Thoughts On</h1>
       <p>This style guide will help consolidate front-end code and document the visual language for the digital branding of Thoughts On. </p>
       <nav>
@@ -27,7 +31,7 @@
           <li><a href="#images">IMAGES</a></li>
         </ul> 
       </nav>
-    </styleGuideNavBar>
+    </div>
 
       <div class="styleguidelines">
         <div class="colorsection">
@@ -35,7 +39,6 @@
             <h2>Color Palette</h2>
             <p>Thoughts On's primary palette contains fallen, muted colors.</p>
             
-            <div id="blue-rectangle"><p>#D2E7DD</p></div>
             <div id="beige-rectangle"><p>#CDC5C1</p></div>
             <div id="salmon-rectangle"><p>#BE7684</p></div>
             <div id="lavender-rectangle"><p>#A18BA4</p></div>
@@ -65,25 +68,28 @@
           <h3>Rendered element:</h3>
             <div class="item-example">
               <h1>Header Level 1
-               <span class="type-label">36px</span>
+               <span class="type-label">24px</span>
               </h1>
               <h4>Header Level 2
-                <span class="type-label">22px</span>
+                <span class="type-label">19px</span>
               </h4>
               <h3>Header Level 3 (Tagline)
                 <span class="type-label">18px</span>
               </h3>
               <p>This is what a paragraph looks like. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor est. 
                 <span class="type-label">14px</span></p>
-                <p> <a href="#">This is a link</a>
-                <span class="type-label">14px</span>
-            
-                <li> list #1</li>
-                <li> list #2</li>
-                <li> list #3</li>
-                
-                <span class="type-label">14px</span>
-              </p>
+
+                <p> 
+                  <a href="#">This is a link</a>
+                  <span class="type-label">14px</span>
+                </p>
+
+                <p>
+                  <li> This is a list </li>
+                  <li> This is a list</li>
+                  <li> This is a list <span class="type-label">14px</span></li>
+                </p>
+
             </div>
           <hr>
         </section>
@@ -120,23 +126,23 @@
           <p>There are two button types. This first kind is rectangular and when pressed, the state of the button changes from a hollow, outlined state to a solid fill in. <br>The second type are left and right arrowed buttons used to go through product images in the detailed product view page.</p>
           
           <h3>CSS selector:</h3>
-          <p>'a.button' , 'a.button:hover' , 'a.button:focus' , 'a.round-button' , 'a.round-button:hover' , 'a.round-button:focus' , '.checkout-buttons' , '.order-summary .button' ,<br>
-           '#blog-comment-button a' , '#blog-comment-button a' , '#purchase-button a' ,</p>
+          <p>'a.button' , 'a.button:hover' , 'a.button:focus' , 'a.round-button-left' , 'a.round-button-right' , 'a.round-button:hover' , 'a.round-button:focus' , '.checkout-buttons' , '.order-summary .button' , '.checkout-buttons' ,<br>
+           '#blog-comment-button a' , '#payment-comment-button a' , '#purchase-button a' ,</p>
           
           <h3>Sample code:</h3>
           <code>&lt;a class="button" href="#"&gt;SEE MORE&lt;/a&gt;</code>
 
           <code>&lt;a class="round-button-left" id="left"
-          &gt;<&lt;/a&gt;</code>
+          &gt;&lt;/a&gt;</code>
 
-          <code>&lt;a class="round-button-right" id="right"&gt;>&lt;/a&gt;</code>
+          <code>&lt;a class="round-button-right" id="right"&gt;&lt;/a&gt;</code>
 
           <h3>Rendered element:</h3>
           <a class="button" href="#">DEFAULT BUTTON</a>
           <a class="round-button" href="#">&lt;</a>
           <a class="round-button" href="#">&gt;</a>
 
-          <div id="dotted-separation-lines"><hr></div>
+          <div class="dotted-separation-lines"><hr></div>
 
           <!-- BUTTONS: DROP DOWN-->
           <p>There are also drop down menus utilized in the website.</p>
@@ -145,8 +151,8 @@
           <p>'form' , 'input' , '.input-wrapper' , 'select', 'label'</p>
           
           <h3>Sample code:</h3>
-          <code>&lt;label for="contry"&gt;Province&lt;/label&gt;
-            <p>&lt;select id="province"&gt;</p>
+          <code>&lt;label for="contry"&gt;PROVINCE&lt;/label&gt;
+            <p>&lt;select name="province" id="province"&gt;</p>
             <p>&lt;option&gt;Alberta&lt;/option&gt;</p>
             <p>&lt;option&gt;British Columbia&lt;/option&gt;</p>
             <p>&lt;option&gt;Manitobal&lt;/option&gt;</p>
@@ -164,19 +170,18 @@
       
           <h3>Rendered element:</h3>
             <div class="input-wrapper">
-              <label for="form-country">Country:</label>
-                <select>
-                  <option value="Andorra">Andorra</option>
-                  <option value="Afghanistan">Afghanistan</option>
-                  <option value="Argentina">Argentina</option>
-                  <option value="Belgium">Belgium</option>
-                  <option value="Bolivia">Bolivia</option>
-                  <option value="Canada">Canada</option>
-                  <option value="China">China</option>
-                  <option value="Chile">Chile</option>
-                  <option value="Costa Rica">Costa Rica</option>
-                  <option value="Czech Republic">Czech Republic</option>
-                  <option value="Germany">Germany</option>
+              <label for="form-province">PROVINCE</label>
+                <select name="form-province" id="form-province">
+                    <option value="example-AL">Alberta</option>
+                    <option value="example-BC">British Columbia</option>
+                    <option value="example-MAN">Manitoba</option>
+                    <option value="example-NB">New Brunswick</option>
+                    <option value="example-NFL">Newfoundland</option>
+                    <option value="example-NS">Nova Scotia</option>
+                    <option value="example-ONT">Ontario</option>
+                    <option value="example-PEI">Prince Edward Island</option>
+                    <option value="example-QU">Quebec</option>
+                    <option value="example-SASK">Saskatchewan</option>
                 </select>
             </div>
           <hr>
@@ -204,8 +209,8 @@
             <p>&lt;input type="text" id=first-name" placeholder="Jane"&gt;</p>
             &lt;/div&gt;</code>
 
-            <code>&lt;label for="contry"&gt;Province&lt;/label&gt;
-            <p>&lt;select id="province"&gt;</p>
+            <code>&lt;label for="contry"&gt;PROVINCE&lt;/label&gt;
+            <p>&lt;select name="province" id="province"&gt;</p>
             <p>&lt;option&gt;Alberta&lt;/option&gt;</p>
             <p>&lt;option&gt;British Columbia&lt;/option&gt;</p>
             <p>&lt;option&gt;Manitobal&lt;/option&gt;</p>
@@ -232,73 +237,87 @@
           
             <div class="form-left-element">
               <div class="input-wrapper">
-                <label for="form-fname">First Name:</label>
-                <input type="text" id="form-fname" placeholder="Jane">
+                <label for="form-fname">First Name</label>
+                <input type="text" id="form-fname" placeholder="Joe">
               </div>
             </div>
 
               <div class="input-wrapper">
-                <label for="form-lname">Last Name:</label>
+                <label for="form-lname">Last Name</label>
                 <input type="text" id="form-lname" placeholder="Doe">
               </div>
 
+              <div class="form-left-element">
               <div class="input-wrapper">
-                <label for="form-address">Address:</label>
-                <input type="text" id="form-address" placeholder="2130 Madison St.">
+                <label for="form-number">Phone Number</label>
+                <input type="text" id="form-number" placeholder="694-123-4567">
+              </div>
+            </div>
+
+              <div class="input-wrapper">
+                <label for="form-zipcode">Postal Code</label>
+                <input type="text" id="form-zipcode" placeholder="V5C 6Y6">
               </div>
 
             <div class="form-left-element">
               <div class="input-wrapper">
-                <label for="form-city">City:</label>
-                <input type="text" id="form-city" placeholder="Burnaby">
+                <label for="form-address">Address</label>
+                <input type="text" id="form-address" placeholder="2130 Madison Ave">
               </div>
             </div>
 
-            <div class="input-wrapper">
-              <label for="form-zipcode">Zipcode:</label>
-              <input type="text" id="form-zipcode" placeholder="V5F 6T7">
-            </div>
+              <div class="input-wrapper">
+                <label for="form-email">Email</label>
+                <input type="text" id="form-email" placeholder="jdoe@gmail.com">
+              </div>
+
 
             <div class="form-left-element">
               <div class="input-wrapper">
-                <label for="form-country">Country:</label>
-                <select>
-                  <option value="Andorra">Andorra</option>
-                  <option value="Afghanistan">Afghanistan</option>
-                  <option value="Argentina">Argentina</option>
-                  <option value="Belgium">Belgium</option>
-                  <option value="Bolivia">Bolivia</option>
-                  <option value="Canada">Canada</option>
-                  <option value="China">China</option>
-                  <option value="Chile">Chile</option>
-                  <option value="Costa Rica">Costa Rica</option>
-                  <option value="Czech Republic">Czech Republic</option>
-                  <option value="Germany">Germany</option>
+                <label for="form-province2">PROVINCE</label>
+                <select name="form-province2" id="form-province2">
+                    <option value="example-AL2">Alberta</option>
+                    <option value="example-BC2">British Columbia</option>
+                    <option value="example-MAN2">Manitoba</option>
+                    <option value="example-NB2">New Brunswick</option>
+                    <option value="example-NFL2">Newfoundland</option>
+                    <option value="example-NS2">Nova Scotia</option>
+                    <option value="example-ONT2">Ontario</option>
+                    <option value="example-PEI2">Prince Edward Island</option>
+                    <option value="example-QU">Quebec</option>
+                    <option value="example-SASK">Saskatchewan</option>
                 </select>
               </div>
             </div>
 
             <div class="input-wrapper">
-                <label for="form-province">State:</label>
-                <select>
-                  <option value="Alberta">Alberta</option>
-                  <option value="British Columbia"> British Columbia</option>
-                  <option value="Manitoba">Manitoba</option>
-                  <option value="New Brunswick">New Brunswick</option>
-                  <option value="Newfoundland and Labrador  ">Newfoundland and Labrador </option>
-                  <option value="Northwest Territories">Northwest Territories</option>
-                  <option value="Nova Scotia">Nova Scotia</option>
-                  <option value="Nunavut"> Nunavut</option>
-                  <option value="Ontario">Ontario</option>
-                  <option value="Prince Edward Island">Prince Edward Island</option>
-                  <option value="Quebec">Quebec</option>
-                  <option value="Saskatchewan">Saskatchewan</option>
-                  <option value="Yukon">Yukon</option>
-                </select>
-              </div>
+                <label for="city1">City</label>
+                    <select name="city1" id="city1">
+                      <option value="AB">Abbotsford</option>
+                      <option value="BBY">Burnaby</option>
+                      <option value="CHILL">Chilliwack</option>
+                      <option value="COQ">Coquitlam</option>
+                      <option value="FSJ">Fort St. John</option>
+                      <option value="KAM">Kamloops</option>
+                      <option value="KEL">Kelowna</option>
+                      <option value="LANG">Langley</option>
+                      <option value="MR">Maple Ridge</option>
+                      <option value="NAI">Nanaimo</option>
+                      <option value="NW">New Westminister</option>
+                      <option value="NV">North Vancouver</option>
+                      <option value="PM">Pitt Meadows</option>
+                      <option value="PMO">Port Moody</option>
+                      <option value="PG">Prince George</option>
+                      <option value="RMD">Richmond</option>
+                      <option value="SUR">Surrey</option>
+                      <option value="VAN">Vancouver</option>
+                      <option value="VIC">Victoria</option>
+                      <option value="WR">White Rock</option>
+                    </select>
+            </div>
 
               <div class="input-wrapper">
-                <a class="button" href="#">PLACE ORDER NOW</a>
+                <a class="button" href="#">PURCHASE NOW</a>
               </div>
 
             </form>
@@ -319,74 +338,81 @@
             </div>
           
               <div class="input-wrapper">
-                <label for="form-fname">First Name:</label>
-                <input type="text" id="form-fname" placeholder="Jane">
+                <label for="form-fname2">First Name</label>
+                <input type="text" id="form-fname2" placeholder="Jane">
               </div>
             
               <div class="input-wrapper">
-                <label for="form-lname">Last Name:</label>
-                <input type="text" id="form-lname" placeholder="Doe">
+                <label for="form-lname2">Last Name</label>
+                <input type="text" id="form-lname2" placeholder="Doe">
               </div>
 
               <div class="input-wrapper">
-                <label for="form-address2">Address:</label>
+                <label for="form-number2">Number</label>
+                <input type="text" id="form-number2" placeholder="604-123-4567">
+              </div>
+
+            <div class="input-wrapper">
+              <label for="form-email2">Email</label>
+              <input type="text" id="form-email2" placeholder="jdoe@gmail.com">
+            </div>
+
+              <div class="input-wrapper">
+                <label for="form-address2">Address</label>
                 <input type="text" id="form-address2" placeholder="2130 Madison St.">
               </div>
 
-            <div class="form-left-element">
-              <div class="input-wrapper">
-                <label for="form-city">City:</label>
-                <input type="text" id="form-city" placeholder="Burnaby">
-              </div>
-            </div>
-
             <div class="input-wrapper">
-              <label for="form-zipcode">Zipcode:</label>
-              <input type="text" id="form-zipcode" placeholder="V5F 6T7">
+              <label for="form-zipcode2">Postal Code</label>
+              <input type="text" id="form-zipcode2" placeholder="V5C 6Y6">
             </div>
 
-          
               <div class="input-wrapper">
-                <label for="form-country2">Country:</label>
-                <div class ="dropdown-two">
-                <select>
-                  <option value="Andorra">Andorra</option>
-                  <option value="Afghanistan">Afghanistan</option>
-                  <option value="Argentina">Argentina</option>
-                  <option value="Belgium">Belgium</option>
-                  <option value="Bolivia">Bolivia</option>
-                  <option value="Canada">Canada</option>
-                  <option value="China">China</option>
-                  <option value="Chile">Chile</option>
-                  <option value="Costa Rica">Costa Rica</option>
-                  <option value="Czech Republic">Czech Republic</option>
-                  <option value="Germany">Germany</option>
+                <label for="form-province3">PROVINCE</label>
+                <select name="form-province3" id="form-province3">
+                    <option value="example-AL3">Alberta</option>
+                    <option value="example-BC3">British Columbia</option>
+                    <option value="example-MAN3">Manitoba</option>
+                    <option value="example-NB3">New Brunswick</option>
+                    <option value="example-NFL3">Newfoundland</option>
+                    <option value="example-NS3">Nova Scotia</option>
+                    <option value="example-ONT3">Ontario</option>
+                    <option value="example-PEI3">Prince Edward Island</option>
+                    <option value="example-QU">Quebec</option>
+                    <option value="example-SASK">Saskatchewan</option>
                 </select>
               </div>
-             
-            </div>
 
             <div class="input-wrapper">
-                <label for="form-province2">State:</label>
-                <select>
-                  <option value="Alberta">Alberta</option>
-                  <option value="British Columbia"> British Columbia</option>
-                  <option value="Manitoba">Manitoba</option>
-                  <option value="New Brunswick">New Brunswick</option>
-                  <option value="Newfoundland and Labrador  ">Newfoundland and Labrador </option>
-                  <option value="Northwest Territories">Northwest Territories</option>
-                  <option value="Nova Scotia">Nova Scotia</option>
-                  <option value="Nunavut"> Nunavut</option>
-                  <option value="Ontario">Ontario</option>
-                  <option value="Prince Edward Island">Prince Edward Island</option>
-                  <option value="Quebec">Quebec</option>
-                  <option value="Saskatchewan">Saskatchewan</option>
-                  <option value="Yukon">Yukon</option>
-                </select>
+                <label for="city2">City</label>
+                    <select name="city2" id="city2">
+                      <option value="AB2">Abbotsford</option>
+                      <option value="BBY2">Burnaby</option>
+                      <option value="CHILL2">Chilliwack</option>
+                      <option value="COQ2">Coquitlam</option>
+                      <option value="FSJ2">Fort St. John</option>
+                      <option value="KAM2">Kamloops</option>
+                      <option value="KEL2">Kelowna</option>
+                      <option value="LANG2">Langley</option>
+                      <option value="MR2">Maple Ridge</option>
+                      <option value="NAI2">Nanaimo</option>
+                      <option value="NW2">New Westminister</option>
+                      <option value="NV2">North Vancouver</option>
+                      <option value="PM2">Pitt Meadows</option>
+                      <option value="PMO2">Port Moody</option>
+                      <option value="PG2">Prince George</option>
+                      <option value="RMD2">Richmond</option>
+                      <option value="SUR2">Surrey</option>
+                      <option value="VAN2">Vancouver</option>
+                      <option value="VIC2">Victoria</option>
+                      <option value="WR2">White Rock</option>
+                    </select>
               </div>
-              <div class="input-wrapper">
-                <a class="button" href="#">PLACE ORDER NOW</a>
+
+              <div class="input-wrapper2">
+                <a class="button" href="#">PURCHASE NOW</a>
               </div>
+
             </form>
           </div>
           <hr>
@@ -425,22 +451,23 @@
             <nav>
               <ul>
                 <li>
-                  <a href ="#keygroupings"><img src="images/home/home_logo.png" height="100" width="200" alt="logo placeholder"></a></li>
+                  <a href="ThoughtsOn.html" class="logo">T&nbsp;|&nbsp;O</a></li>
                 <li><a href="#keygroupings">WHO ARE WE?</a></li>
                 <li><a href="#keygroupings">OUR PRODUCTS</a></li>
                 <li><a href="#keygroupings">WHAT'S NEW?</a></li>
                 <li>
                   <div class="navbar-icons-group">
-                    <a href="#keygroupings" class="nav-icons"><img src="images/icons/icon_shoppingbag.png"height="32" width="32" alt="shopping icon placeholder"></a>
-                   <a href="https://facebook.com" class="nav-icons"><img src="images/icons/icon_facebook.png" height="32" width="32" alt="facebook icon placeholder"></a>
+                    
                    <a href="https://pinterest.com" class="nav-icons"><img src="images/icons/icon_pinterest.png" height="32" width="32" alt="pinterest icon placeholder"></a>
+                   <a href="https://facebook.com" class="nav-icons"><img src="images/icons/icon_facebook.png" height="32" width="32" alt="facebook icon placeholder"></a>
+                   <a href="#keygroupings" class="nav-icons"><img src="images/icons/icon_shoppingbag.png"height="32" width="32" alt="shopping icon placeholder"></a>
                   </div>
                 </li>
               </ul> 
             </nav>
           </exampleNavBar>
 
-          <div id="dotted-separation-lines"><hr></div>
+          <div class="dotted-separation-lines"><hr></div>
 
           <!-- KEY GROUPINGS: GROUP OF TEXT-->
           <p>As an example, this is what the <strong>a group of texts</strong> would look like on Thoughts On's website.</p>
@@ -466,7 +493,7 @@
             </div>
           </exampletextGroup>
 
-          <div id="dotted-separation-lines"><hr></div>
+          <div class="dotted-separation-lines"><hr></div>
 
           <!-- KEY GROUPINGS: PRODUCT LISTING-->
           <p>As an example, this is what the <strong>product listing elements</strong> would look like on Thoughts On's website.</p>
@@ -535,7 +562,7 @@
 
           </exampleProductListing>
 
-          <div id="dotted-separation-lines"><hr></div>
+          <div class="dotted-separation-lines"><hr></div>
 
           <!-- KEY GROUPINGS: CHECK OUT PROCESS INDICATOR-->
           <p>As an example, this is what the <strong>checkout process bar</strong> would look like on Thoughts On's website.</p>
@@ -588,7 +615,7 @@
             
               <img src="images/icons/icon_pinterest.png"height="70" width="70" alt="pinterest icon placeholder">
             </div>
-          <div id="dotted-separation-lines"><hr></div>
+          <div class="dotted-separation-lines"><hr></div>
 
           <!-- IMAGES:PICS-->
           <p>Images (product listing and othes) will be borderless and have right angled corners. Background images with a text overlay with be set at 30% opacity</p>

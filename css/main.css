@@ -22,6 +22,10 @@ section p {
   margin-top: 0;
 }
 
+.style-guide-nav p{
+  margin-left: 2em;
+}
+
 code p{
   text-indent: 2em;
   margin-bottom:0;
@@ -45,7 +49,7 @@ hr{
   height: 1px;
 }
 
-#dotted-separation-lines hr{
+.dotted-separation-lines hr{
   margin:3em 0 3em 0;
   width:100%; 
   border-top: 2.5px dotted gray;
@@ -56,7 +60,7 @@ hr{
 
 /* STYLE GUIDE NAVIGATION */
 
-styleGuideNavBar{
+.style-guide-nav{
   font-weight: 300;
   background-color: #CDC5C1;
   color: white;
@@ -67,11 +71,11 @@ styleGuideNavBar{
   z-index: 2;
 }
 
-styleGuideNavBar a{
+.style-guide-nav a{
   transition: background-color 0.5s ease-out;
 }
 
-styleGuideNavBar a:active, styleGuideNavBar a:hover {
+.style-guide-nav a:active, .style-guide-nav a:hover {
   background-color: #5E3149;
 }
 
@@ -82,9 +86,6 @@ h1{
   margin: 0.75em 0 0 0.6em
 }
 
-styleGuideNavBar p{
-  margin-left: 1.5em
-}
 
 ul {
   list-style-type: none;
@@ -92,9 +93,13 @@ ul {
   margin: 0;
 }
 
-li {
+.style-guide-nav li, exampleNavBar li {
   float:left;
   margin-left: 1.5em;
+}
+
+.textsection li{
+  margin-left: 1.6em;
 }
 
 nav a{
@@ -116,7 +121,7 @@ nav a{
   padding: 0.5em 0;
 }
 
-#blue-rectangle, #beige-rectangle, #salmon-rectangle, #lavender-rectangle, #purple-rectangle{
+#beige-rectangle, #salmon-rectangle, #lavender-rectangle, #purple-rectangle{
   width:100px;
   height:40px;
   margin-right:1em;
@@ -124,10 +129,6 @@ nav a{
   color:white;
   text-align: center;
   display: inline-block; 
-}
-
-#blue-rectangle{
-  background:#D2E7DD;
 }
 
 #beige-rectangle{
@@ -157,6 +158,7 @@ style li{
   text-align: center;
 }
 
+
 /* TEXTUAL ELEMENTS SECTION */
 
 .item-example, .form-example, .text-group-example, .product-listing-example{
@@ -169,7 +171,7 @@ style li{
 
 .item-example h1, .text-group-example h1{
   font-family: 'Josefin Slab' serif;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom:1em;
   color: #BC7482;
@@ -177,9 +179,10 @@ style li{
 
 .item-example h4 {
   font-family: 'Josefin Slab' serif;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 500;
-  margin:0 0 1em 0.9em;
+  margin:0 0 0.5em 0.9em;
+  padding-top:0.5em;
 }
 
 .item-example h3,  a.button, .text-group-example h3, #shipping-info h3, #billing-info h3, #complete h3, .product-listing-example h3{
@@ -194,6 +197,7 @@ style li{
 
 .item-example p{
   margin:2em 1em 1em 1.5em;
+  line-height: 1.3em;
 }
 
 .item-example a{
@@ -202,7 +206,7 @@ style li{
 }
 
 a:hover{
-  text-decoration: underline;
+   color:#BC7482;
 }
 
 span.type-label {
@@ -225,8 +229,9 @@ span.type-label {
 .rendered-dotted-lines hr{
   margin:2em 0 0 0;
   width:200px;
-  border-top: 2.5px dotted;
+  border-top: 1.8px dotted;
   background:transparent;
+  opacity:0.7;
 }
 
 /* BUTTONS SECTION */
@@ -246,22 +251,20 @@ a.button, .view-details-button a.button{
   box-shadow: 0 0 3px gray;
   background-color: white;
   border: 1px solid #f5f5f5;
-
-  -webkit-transition: background-color 0.7s ease-out;
-  transition: background-color 0.s ease-out;
 }
 
 a.button:hover, a.button:focus, .view-details-button a.button:hover, .view-details-button a.button:focus, a.round-button:hover,  a.round-button:focus {
   background-color: #BC7482;
   color: white;
   text-decoration: none;
+  -webkit-transition: background-color 0.7s ease-out;
+  transition: background-color 0.s ease-out;
 }
 
-a.round-button:hover,  a.round-button:focus{
-  opacity:0.3;
-}
+
 
 a.round-button {
+  font-size:28px;
   color:#BC7482;
   background: #464646;
   box-shadow: 0 0 3px gray;
@@ -275,7 +278,18 @@ a.round-button {
   border-radius: 50%;
   text-align:center;
   text-decoration:none;
+  opacity: 0.8;
 }
+
+.input-wrapper a{
+  margin-left: 510px;
+}
+
+.input-wrapper2 a{
+  margin-left: 170px;
+}
+
+
 
 /* FORMS SECTION */
 
@@ -296,7 +310,7 @@ form {
 }
 
 
-#form-fname, #form-lname, #form-city, #form-zipcode, #form-address2{
+#form-fname, #form-lname, #form-number, #form-email, #form-address, #form-city, #form-zipcode{
   width:314px;
 }
 
@@ -310,23 +324,25 @@ input{
   padding: 0.15em 0 0 1em;
 }
 
-#form-address{
-  clear:float;
-  width:685px;
-  /*min-width: 290px;
-  max-width: 685px;
-  width:100%;
-  for responsive*/
- }
 
-select{
+select, .input-wrapper input{
   width:329px;
+  border: 1.5px solid #A18BA4;
+  background:transparent;
+  vertical-align: middle;
+  border-radius:5px;
  }
 
 label {
   display: block;
-  margin-right:240px;
+  text-align: center;
+  padding: 3em 0.35em 0.35em 0.25em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
+
+
 
 .form-example-two{
   width:405px;
@@ -338,6 +354,15 @@ label {
 
 
 /* KEY ELEMENTS: NAV BAR EXAMPLE; */
+
+.logo{
+  font-family: 'Gravitas One',serif;
+  font-style: normal;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  color:#5E3149;
+  opacity:0.9;
+}
 
 exampleNavBar{
   font-weight: 300;
@@ -353,6 +378,7 @@ exampleNavBar{
 
 exampleNavBar a:hover{
   color:#BE7684;
+  text-decoration: underline;
 }
 
 exampleNavBar a:active{
@@ -374,11 +400,12 @@ exampleNavBar nav a{
   text-align: left;
   color:white;
   padding: 1em 0.5em 1em 1em;
+  letter-spacing: 0.1em;
 }
 
 exampleNavBar nav img{
 
-  margin-top:-5em;
+  margin-top:-0.75em;
 
 }
 
