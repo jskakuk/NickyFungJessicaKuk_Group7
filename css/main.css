@@ -1,5 +1,5 @@
 body, nav a, code {
-  font-family: 'Roboto Condensed' sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 14px;
   font-weight: 300;
   padding: 1rem;
@@ -93,7 +93,7 @@ ul {
   margin: 0;
 }
 
-.style-guide-nav li, exampleNavBar li {
+.style-guide-nav li, .exampleNavBar li {
   float:left;
   margin-left: 1.5em;
 }
@@ -170,23 +170,25 @@ style li{
 }
 
 .item-example h1, .text-group-example h1{
-  font-family: 'Josefin Slab' serif;
+  font-family: 'Josefin Slab', serif;
   font-size: 24px;
   font-weight: 700;
   margin-bottom:1em;
   color: #BC7482;
 }
 
-.item-example h4 {
-  font-family: 'Josefin Slab' serif;
+.item-example h4, .descriptions h4{
+  font-family: 'Josefin Slab', serif;
   font-size: 19px;
-  font-weight: 500;
+  font-weight: 300;
   margin:0 0 0.5em 0.9em;
   padding-top:0.5em;
 }
 
+
+
 .item-example h3,  a.button, .text-group-example h3, #shipping-info h3, #billing-info h3, #complete h3, .product-listing-example h3{
-  font-family: 'Josefin Slab' serif;
+  font-family: 'Josefin Slab', serif;
   font-size: 18px;
   font-weight: 500;
   font-style: italic;
@@ -212,7 +214,7 @@ a:hover{
 span.type-label {
   display:inline-block;
   color: #A5A5A5;
-  font-family: 'Josefin Slab' serif;
+  font-family: 'Josefin Slab', serif;
   font-size: 14px;
   font-weight: 400;
   margin-left: 12px;
@@ -355,17 +357,18 @@ label {
 
 /* KEY ELEMENTS: NAV BAR EXAMPLE; */
 
-.logo{
+.exampleNavBar #logo{
   font-family: 'Gravitas One',serif;
   font-style: normal;
   font-size: 1.5em;
   margin-top: 0.5em;
   color:#5E3149;
   opacity:0.9;
+  text-decoration: 
+
 }
 
-exampleNavBar{
-  font-weight: 300;
+.exampleNavBar{
   background-color: #CDC5C1;
   color: white;
   float:left;
@@ -376,18 +379,15 @@ exampleNavBar{
   width:1180px;
 }
 
-exampleNavBar a:hover{
+.exampleNavBar nav a:hover, .exampleNavBar #logo:hover{
   color:#BE7684;
-  text-decoration: underline;
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+
 }
 
-exampleNavBar a:active{
-  color:#5E3149;
-}
-
-
-exampleNavBar nav a{
-  font-family: 'Josefin Slab' serif;
+.exampleNavBar nav a{
+  font-family: 'Josefin Slab', serif;
   font-size: 16px;
   font-weight: 700;
   font-style: italic;
@@ -403,31 +403,28 @@ exampleNavBar nav a{
   letter-spacing: 0.1em;
 }
 
-exampleNavBar nav img{
-
-  margin-top:-0.75em;
-
-}
-
-li img {
-  margin:-1em 3em 0 1em;
-}
 
 li img:hover {
   opacity: 0.3;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
 }
 
-.navbar-icons-group{
-    float: right;
+
+.exampleNavBar .nav-icons{
+  display:inline-block;
+  width:50px;
+  margin-top:1.9em;
+  margin-right:0;
+  padding:0;
 }
 
-.nav-icons{
-  float:right;
-  width:1.75em;
- 
- margin-right:auto;
- margin-left:auto;
+
+.exampleNavBar .nav-icons-group{
+  margin-left: 5em;
 }
+
+
 
 /* KEY ELEMENTS: GROUP TEXT EXAMPLE */
 
@@ -474,18 +471,22 @@ li img:hover {
   margin: 0 0.5em 1em 1em;
 }
 
-.product-listing-example img:hover{
-  opacity:0.3;
-}
 
 .descriptions{
   margin-left:0.1em;
   text-align: left;
 }
 
-.descriptions h3{
+.descriptions h4{
   display:inline-block;
-  margin: 0 0em 4em 1.9em;
+  margin: 0 2em 4em 1.9em;
+}
+
+.descriptions p{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 0.5em;
 }
 
 .view-details-button{

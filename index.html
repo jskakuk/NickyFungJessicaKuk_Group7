@@ -428,49 +428,60 @@
           <p>As an example, this is what the <strong>navigation bar</strong> would look like on Thoughts On's website.</p>
           
           <h3>CSS selector:</h3>
-          <p>'nav' , 'nav a' , 'nav a:hover' , 'nav a:active' ,  'nav li img' , 'nav li img:hover' , '.navbar-icons-group' , '.nav-icons' </p>
+          <p>'nav' , 'nav a' , 'nav a:hover' , 'nav a:focus' ,  'nav li img' , 'nav li img:hover' , '.navbar-icons-group' , '.nav-icons' </p>
           
           <h3>Sample code:</h3>
 
-          <code>&lt;nav class="grid"&gt;</code>
-          <code>&lt;div class="col-2of10"&gt;
-          &lt;div class="nav-icons-group"&gt;
-          <p>&lt;a href="ThoughtsOn,html" class="nav-icons"&gt;&lt;img src="images/home/home_logo.jpg&gt;&lt;/a&gt;
+          <code>&lt;nav class="grid"&gt;
           <p>&lt;div class="col-2of10"&gt;</p>
-          <p>&lt; a href="ThoughtsOn_WhoAreWe.html" class="menu-items"&gt;WHO ARE WE?&lt;/a&gt;</p>
-          
-          &lt;div class="col-2of10"&gt;
-          <p>&lt; a href="ThoughtsOn_ReadyMades.html" class="menu-items"&gt;OUR PRODUCTS&lt;/a&gt;</p>
+          <p>&lt;a href="ThoughtsOn_WhoAreWe.html" class="menu-items">WHO ARE WE?&gt;&lt;/a&gt;
+          <p>&lt;/div&gt;</p>
+          <p>...</p>
+          &lt;/nav&gt;
+          </code>
 
-          &lt;div class="col-2of10"&gt;
-          <p>&lt; a href="ThoughtsOn_Blog.html" class="menu-items"&gt;WHAT'S NEW&lt;/a&gt;</p>
+          <code>&lt;div class="col-2of10"&gt;
+          <p>&lt;div class="nav-icons-group"&gt;</p>
+            <p>&lt;a href="ThoughtsOn_ShoppingBag.html" class="nav-icons"&gt;</p>
+            <p>&lt;img src="images/icons/icon_shoppingbag.png" height="32" width="32" alt="placeholder"&gt;</p>
+            <p>&lt;/a&gt;</p>
+          
+            <p>&lt;a href="http://facebook.com" class="nav-icons"&gt;</p>
+            <p>&lt;img src="images/icons/icon_fb.png" height="32" width="32" alt="placeholder"&gt;</p>
+            <p>&lt;/a&gt;</p>
+
+            <p>&lt;a href="http://pinterest.com" class="nav-icons"&gt;</p>
+            <p>&lt;img src="images/icons/icon_pinterest.png" height="32" width="32" alt="placeholder"&gt;</p>
+            <p>&lt;/a&gt;</p>
+
+          <p>&lt;/div&gt;</p>
+          &lt;/div&gt;
           </code>
 
           <h3>Rendered element:</h3>
-          <exampleNavBar>
+          <div class="exampleNavBar">
             <nav>
               <ul>
                 <li>
-                  <a href="ThoughtsOn.html" class="logo">T&nbsp;|&nbsp;O</a></li>
+                  <a href="ThoughtsOn.html" id="logo">T&nbsp;|&nbsp;O</a></li>
                 <li><a href="#keygroupings">WHO ARE WE?</a></li>
                 <li><a href="#keygroupings">OUR PRODUCTS</a></li>
                 <li><a href="#keygroupings">WHAT'S NEW?</a></li>
                 <li>
-                  <div class="navbar-icons-group">
-                    
-                   <a href="https://pinterest.com" class="nav-icons"><img src="images/icons/icon_pinterest.png" height="32" width="32" alt="pinterest icon placeholder"></a>
-                   <a href="https://facebook.com" class="nav-icons"><img src="images/icons/icon_facebook.png" height="32" width="32" alt="facebook icon placeholder"></a>
-                   <a href="#keygroupings" class="nav-icons"><img src="images/icons/icon_shoppingbag.png"height="32" width="32" alt="shopping icon placeholder"></a>
+                  <div class="nav-icons-group">
+                    <a href="ThoughtsOn_ShoppingBag.html" class="nav-icons"><img src="images/icons/icon_shoppingbag.png" height="32" width="32" alt="shopping icon placeholder"></a>
+                    <a href="https://www.facebook.com/pages/Thoughts-On-Crafts/1560522474167879" class="nav-icons"><img src="images/icons/icon_facebook.png" height="32" width="32" alt="facebook icon placeholder"></a>
+                    <a href="https://www.pinterest.com/jennylynnr/glass-etching-ideas/" class="nav-icons"><img src="images/icons/icon_pinterest.png" height="32" width="32" alt="pinterest icon placeholder"></a>
                   </div>
                 </li>
               </ul> 
             </nav>
-          </exampleNavBar>
+          </div>
 
           <div class="dotted-separation-lines"><hr></div>
 
           <!-- KEY GROUPINGS: GROUP OF TEXT-->
-          <p>As an example, this is what the <strong>a group of texts</strong> would look like on Thoughts On's website.</p>
+          <p>As an example, this is what the <strong>a group of text</strong> would look like on Thoughts On's website.</p>
           
           <h3>CSS selector:</h3>
           <p>'h1' , 'h3' , 'p' , 'a.button' , 'a.button:hover' , 'a.button:focus' </p>
@@ -499,26 +510,26 @@
           <p>As an example, this is what the <strong>product listing elements</strong> would look like on Thoughts On's website.</p>
           
           <h3>CSS selector:</h3>
-          <p>'product-content p' , 'product-content-image' , 'product-content-text' , 'h2' , 'img' , 'img a' , 'img a:hover' , 'img a:active'</p>
+          <p>'product-content p' , 'product-content-image' , 'product-content-text' , 'product-content-image img' , 'product-content-image img a' , 'product-content-image img a:hover' , 'product-content-image img a:focus'</p>
           <h3>Sample code:</h3>
             <code>&lt;div class="product-content&gt;
               <p>&lt;div class="product-content-image"&gt;</p>
               <p>&lt;img src="images/product_listing/mason_jar.jpg" height="200" width="250"
                 <br>
               <p>alt="product #1: designer life mason jar&gt;</p>
-              &lt;/div&gt;<br>
+              <p>&lt;/div&gt;</p><br>
 
-              &lt;div class="product-content-text"&gt;
+
+              <p>&lt;div class="product-content-text"&gt;</p>
               <p>&lt;h2&gt;Design Life Mason Jar&lt;/h2&gt;</p>
               <p>&lt;p&gt;&lt;strong&gt;$20.00&lt;/strong&gt;&lt;/p&gt;</p>
               <p>&lt;a class="button" href="ThoughtsOn_MasonJar.html"&gt;&lt;VIEW DETAIL&gt;&lt;/a&gt;</p>
+              <p>&lt;/div&gt;</p>
               &lt;/div&gt;</code>
               
-          </code>
 
         
           <h3>Rendered element:</h3>
-          <exampleProductListing>
             <div class="product-listing-example">
               <a href ="#"><img src="images/product-listing-placeholder.png"height="130" width="168" alt="product listing image placeholder"></a>
               <a href ="#"><img src="images/product-listing-placeholder.png"height="130" width="168" alt="product listing image placeholder"></a>
@@ -526,10 +537,10 @@
               <a href ="#"><img src="images/product-listing-placeholder.png"height="130" width="168" alt="product listing image placeholder"></a>
               
               <div class="descriptions">
-                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
-                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
-                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
-                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
+                <h4>Product Name<br><p><strong>$$$</strong></p></h4>
+                <h4>Product Name<br><p><strong>$$$</strong></p></h4>
+                <h4>Product Name<br><p><strong>$$$</strong></p></h4>
+                <h4>Product Name<br><p><strong>$$$</strong></p></h4>
               </div>
 
               <div class="view-details-button">
@@ -545,10 +556,10 @@
               <a href ="#"><img src="images/product-listing-placeholder.png"height="130" width="168" alt="product listing image placeholder"></a>
               
               <div class="descriptions">
-                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
-                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
-                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
-                <h3><strong>PRODUCT NAME</strong><br>$$$</h3>
+                <h4>Product Name<br><p><strong>$$$</strong></p></h4>
+                <h4>Product Name<br><p><strong>$$$</strong></p></h4>
+                <h4>Product Name<br><p><strong>$$$</strong></p></h4>
+                <h4>Product Name<br><p><strong>$$$</strong></p></h4>
               </div>
 
               <div class="view-details-button">
@@ -558,9 +569,6 @@
                 <a class="button" href="#">VIEW DETAILS</a>
               </div>
             </div>
-
-
-          </exampleProductListing>
 
           <div class="dotted-separation-lines"><hr></div>
 
@@ -573,7 +581,8 @@
 
           <h3>Sample code:</h3>
             <code>&lt;div class="processbar-info-container"&gt;
-              <p>&lt;h3&gt;&lt;strong&gt;1. SHIPPING INFO &lt;/strong&gt;&lt;/h3&gt;&lt;/div&gt;</p></code>
+              <p>&lt;h3&gt;&lt;strong&gt;1. SHIPPING INFO &lt;/strong&gt;&lt;/h3&gt;</p>
+              &lt;/div&gt;</code>
           
 
 
@@ -601,8 +610,9 @@
           
           <h3>Sample code:</h3>
           <code>&lt;div class="nav-icons-group"&gt;
-            <p>&lt;a href="ThoughtsOn_ShoppingBag.html" class="nav-icons-selected"&gt;&lt;img</p>
-            <p> src="images/icons/icon_shoppingbag.png" height="32" width="32" alt="shopping icon placeholder&gt;&lt;/a&gt;</p>
+            <p>&lt;a href="ThoughtsOn_ShoppingBag.html" class="nav-icons-selected"&gt;</p>
+            <p>&lt;img src="images/icons/icon_shoppingbag.png" height="32" width="32" alt="shopping icon placeholder&gt;</p>
+            <p>&lt;/a&gt;</p>
             &lt;/div&gt;
           </code>
 
@@ -610,24 +620,25 @@
           
           <h3>Rendered element:</h3>
             <div class="icons-example">
-              <img src="images/icons/icon_shoppingbag.png"height="70" width="70" alt="shopping icon placeholder">
-              <img src="images//icons/icon_facebook.png"height="70" width="70" alt="facebook icon placeholder">
+              <img src="images/icons/shoppingbag-example.png"height="70" width="70" alt="shopping icon placeholder">
+              <img src="images//icons/facebook-example.png"height="70" width="70" alt="facebook icon placeholder">
             
-              <img src="images/icons/icon_pinterest.png"height="70" width="70" alt="pinterest icon placeholder">
+              <img src="images/icons/pinterest-example.png"height="70" width="70" alt="pinterest icon placeholder">
             </div>
           <div class="dotted-separation-lines"><hr></div>
 
           <!-- IMAGES:PICS-->
-          <p>Images (product listing and othes) will be borderless and have right angled corners. Background images with a text overlay with be set at 30% opacity</p>
+          <p>Images (product listing and othes) will be borderless and have right angled corners. Background images with a text overlay with be set at 30% opacity.</p>
           
           <h3>CSS selector:</h3>
-          <p>'.product-listing-example img'</p>
+          <p>'img' , '.blog-content-image img' , '.bio-content-image img' , '.product-details-content-image img' , 'suggested-product-images img'</p>
           
           <h3>Sample code:</h3>
           <code>&lt;div class="product-content"&gt;
-           &lt;div class="product-content-image"&gt; 
+           <p>&lt;div class="product-content-image"&gt; </p>
             <p>img src="images/product_listing/candle_mason_jar.jpg"height="200" width="250" alt="product #2: set of</p> 
             <p>candle mason jars"&gt;</p>
+            <p> &lt;/div&gt;</p>
             &lt;/div&gt;
           </code>
 
@@ -642,7 +653,7 @@
         </section>
        </div> 
 
-       <p>IAT 339 || D101 || Jessica Kuk || 301139384 || </p>
+       <p>IAT 339 || D101 || Nicky Fung & Jessica Kuk </p>
     </div>
   </body>
 </html>
