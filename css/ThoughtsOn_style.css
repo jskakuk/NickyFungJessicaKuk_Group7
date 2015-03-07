@@ -50,7 +50,7 @@ a{
   text-decoration: none;
 }
 
-a:hover{
+a:hover, a:focus{
   color: #BC7482
 }
 
@@ -167,7 +167,7 @@ img{
 .blog-content-image img, .bio-content-image img, .product-details-content-image img {
   margin-top:1em;
   margin-right:3em;
-  margin-bottom:0.75em;
+  margin-bottom:0.55em;
   float:left;
 }
 
@@ -252,7 +252,7 @@ a.round-button-left, a.round-button-right {
   margin: 13% 0 0 -3.3em;
 }
 
-a.round-button-left:hover, a.round-button-right:hover{
+a.round-button-left:hover, a.round-button-right:hover, a.round-button-left:focus, a.round-button-right:focus{
   opacity:0.3;
 }
 
@@ -315,7 +315,7 @@ select{ /* drop down */
   transition: color 0.35s;
 }
 
-header a:hover{
+header a:hover, header a:focus{
   color:#BE7684;
 }
 
@@ -324,21 +324,29 @@ a.menu-item-selected{
   color:#5E3149;
 }
 
-.nav-icons {
+.nav-icons, .nav-icons-selected {
   display:inline-block;
-  width:10%;
+  width:13%;
   margin-top:1.8em;
   margin-right:1.5em;
   padding:0;
 }
 
-.nav-icons img{
+.nav-icons-selected{
+  border: 1px solid #5E3149;
+  width:34px;
+  height:34px;
+  border-radius: 50%;
+}
+
+.nav-icons img, .nav-icons-selected img{
   max-width: 32px;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
 
-.nav-icons img:hover, .suggested-product-images img:hover{
+.nav-icons img:hover, .nav-icons-selected img:hover, .suggested-product-images img:hover,
+.nav-icons img:focus, .nav-icons-selected img:focus, .suggested-product-images img:focus{
   opacity: 0.3;
 }
 
@@ -491,9 +499,6 @@ th{
 .shoppingbag-summary img{
   max-width:none; /*ensure that images dont get smaller with screen size*/
 }
-
-
-
 
 
 

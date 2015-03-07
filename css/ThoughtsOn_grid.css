@@ -75,10 +75,6 @@
 	width:100%;
 	}
 
-	.product-content img{
-		margin-top: 3em !important;
-	}
-
 	.product-content .button{
 		margin-top: 1em !important;
 	}
@@ -94,6 +90,12 @@
 @media (max-width:55em){ /* at 55 em, the columns should expand to 100% and take up whole screen*/
 	.col-2of10{
 		width:100%;
+	}
+
+	.nav-icons-selected, .nav-icons{
+	  width:34px !important;
+	  margin-right: 0.5em!important;
+	  margin-left: 0.5em!important;
 	}
 
 	nav a{  /*decrease margin or stacked menu*/
