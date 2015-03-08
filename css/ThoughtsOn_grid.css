@@ -3,7 +3,7 @@
 *,*::after,*::before{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizig: border-box;
+	box-sizing: border-box;
 }
 
 
@@ -208,7 +208,7 @@
 	}
 
 	.shoppingbag-summary td:nth-of-type(5):before { 
-		content: "Total Price"; }
+		content: "Total Price";
 	}
 }
 

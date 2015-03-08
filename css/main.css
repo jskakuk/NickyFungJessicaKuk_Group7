@@ -1,3 +1,5 @@
+/* STYLE GUIDE STYLING*/
+
 body, nav a, code {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 14px;
@@ -24,11 +26,6 @@ section p {
 
 .style-guide-nav p{
   margin-left: 2em;
-}
-
-code p{
-  text-indent: 2em;
-  margin-bottom:0;
 }
 
 code br{
@@ -79,15 +76,14 @@ hr{
   background-color: #5E3149;
 }
 
-
 h1{
   font-size:38px;
   font-weight: 700;
   margin: 0.75em 0 0 0.6em
 }
 
-
-ul {
+.style-guide-nav ul {
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -98,7 +94,7 @@ ul {
 }
 
 .textsection li{
-  margin-left: 3em;
+  margin-left: 1.6em;
 }
 
 nav a{
@@ -146,7 +142,6 @@ nav a{
   background:#5E3149;
 }
 
-
 style li{
   width: 100px;
   height:20px ;
@@ -183,8 +178,6 @@ style li{
   margin:0 0 0.5em 0.9em;
   padding-top:0.5em;
 }
-
-
 
 .item-example h3,  a.button, .text-group-example h3, #shipping-info h3, #billing-info h3, #complete h3, .product-listing-example h3{
   font-family: 'Josefin Slab', serif;
@@ -259,10 +252,8 @@ a.button:hover, a.button:focus, .view-details-button a.button:hover, .view-detai
   color: white;
   text-decoration: none;
   -webkit-transition: background-color 0.7s ease-out;
-  transition: background-color 0.s ease-out;
+  transition: background-color 0s ease-out;
 }
-
-
 
 a.round-button {
   font-size:28px;
@@ -290,8 +281,6 @@ a.round-button {
   margin-left: 170px;
 }
 
-
-
 /* FORMS SECTION */
 
 form {
@@ -304,7 +293,6 @@ form {
 .check-boxes input{
   margin:0 1em 3em 2.5em;
 }
-
 
 .form-left-element{
   float:left;
@@ -325,7 +313,6 @@ input{
   padding: 0.15em 0 0 1em;
 }
 
-
 select, .input-wrapper input{
   width:329px;
   border: 1.5px solid #A18BA4;
@@ -342,8 +329,6 @@ label {
   letter-spacing: 1px;
   cursor: pointer;
 }
-
-
 
 .form-example-two{
   width:405px;
@@ -363,8 +348,7 @@ label {
   margin-top: 0.5em;
   color:#5E3149;
   opacity:0.9;
-  text-decoration: 
-
+  text-decoration: none;
 }
 
 .exampleNavBar{
@@ -402,13 +386,11 @@ label {
   letter-spacing: 0.1em;
 }
 
-
 li img:hover {
   opacity: 0.3;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
-
 
 .exampleNavBar .nav-icons{
   display:inline-block;
@@ -418,11 +400,9 @@ li img:hover {
   padding:0;
 }
 
-
 .exampleNavBar .nav-icons-group{
   margin-left: 5em;
 }
-
 
 
 /* KEY ELEMENTS: GROUP TEXT EXAMPLE */
@@ -470,22 +450,25 @@ li img:hover {
   margin: 0 0.5em 1em 1em;
 }
 
-
 .descriptions{
-  margin-left:0.1em;
+  margin-left:2.5em;
   text-align: left;
 }
 
 .descriptions h4{
   display:inline-block;
-  margin: 0 2em 4em 1.9em;
+  margin: 0 2em 0.5em 0;
+  padding-right:2em;
 }
 
 .descriptions p{
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 14px;
   font-weight: 300;
-  margin-top: 0.5em;
+  display:inline-block;
+  margin: -10em 0 6em 0;
+  padding-right:12em;
+
 }
 
 .view-details-button{
