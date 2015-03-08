@@ -137,6 +137,7 @@
 	}
 
 	.bio-content{
+		padding-top:2.5em!important;
 		padding-bottom: 0 !important; /* decreases padding of white space of bio page*/
 	}
 
