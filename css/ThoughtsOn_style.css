@@ -135,6 +135,12 @@ a:hover, a:focus{
   margin-top: -1em;
 }
 
+.profile-container {
+  width:75%;
+ margin-right: auto;
+ margin-left: auto;
+}
+
 
 /* IMAGE STYLING */
 
@@ -491,16 +497,6 @@ th{
 .shoppingbag-summary img{
   max-width:none; /*ensure that images dont get smaller with screen size*/
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
