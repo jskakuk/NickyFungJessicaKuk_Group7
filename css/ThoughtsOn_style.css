@@ -218,8 +218,8 @@ a.button:hover, a.button:focus, a.round-button-left:hover, a.round-button-right:
   background-color: #BC7482;
   color: white;
   text-decoration: none;
-  -webkit-transition: background-color 0.7s ease-out;
-  transition: background-color 0s ease-out;
+  -webkit-transition: background-color 0.35s ease-out;
+  transition: background-color 0.35s ease-out;
 }
 
 a.round-button-left, a.round-button-right {
@@ -333,13 +333,13 @@ a.menu-item-selected{
 
 .nav-icons img, .nav-icons-selected img{
   max-width: 32px;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
 }
 
 .nav-icons img:hover, .nav-icons-selected img:hover, .suggested-product-images img:hover,
 .nav-icons img:focus, .nav-icons-selected img:focus, .suggested-product-images img:focus{
   opacity: 0.3;
+  -webkit-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
 }
 
 .logo{

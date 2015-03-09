@@ -82,7 +82,7 @@ h1{
   margin: 0.75em 0 0 0.6em
 }
 
-.style-guide-nav ul {
+.style-guide-nav ul, .keygroupingsection ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -91,10 +91,6 @@ h1{
 .style-guide-nav li, .exampleNavBar li {
   float:left;
   margin-left: 1.5em;
-}
-
-.textsection li{
-  margin-left: 1.6em;
 }
 
 nav a{
@@ -251,8 +247,8 @@ a.button:hover, a.button:focus, .view-details-button a.button:hover, .view-detai
   background-color: #BC7482;
   color: white;
   text-decoration: none;
-  -webkit-transition: background-color 0.7s ease-out;
-  transition: background-color 0s ease-out;
+  -webkit-transition: background-color 0.35s ease-out;
+  transition: background-color 0.35s ease-out;
 }
 
 a.round-button {
@@ -328,6 +324,11 @@ label {
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
+}
+
+.buttonsection label{
+  text-align: left;
+  margin-left: 9em;
 }
 
 .form-example-two{

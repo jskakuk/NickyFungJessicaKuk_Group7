@@ -26,7 +26,7 @@
           <li><a href="#text">TEXT</a></li>
           <li><a href="#lines">LINES</a></li>
           <li><a href="#buttons">BUTTONS</a></li>
-          <li><a href="#forms">FORMS</a></li>
+          <li><a href="#forms1">FORMS</a></li>
           <li><a href="#keygroupings">KEY GROUPINGS</a></li>
           <li><a href="#images">IMAGES</a></li>
         </ul> 
@@ -108,7 +108,7 @@
           <p>There are two different types of lines used: solid and dotted.</p>
           
           <h3>CSS selector:</h3>
-          <p>'hr' , '.dotted-line hr' , '.solid-lines-text-body hr' , '.dotted-line-separator hr' , '.dotted-line-footer hr'</p>
+          <p>'hr' , '.solid-lines-text-body hr' , '.dotted-line-separator hr' , '.dotted-line-footer hr'</p>
           
           <h3>Sample code:</h3>
           <code>&lt;div class="solid-lines-text-body"&gt;&lt;hr&gt;&lt;/div&gt;</code> 
@@ -132,7 +132,7 @@
           
           <h3>CSS selector:</h3>
           <p>'a.button' , 'a.button:hover' , 'a.button:focus' , 'a.round-button-left' , 'a.round-button-right' , 'a.round-button:hover' , 'a.round-button:focus' , '.checkout-buttons' , '.order-summary .button' , '.checkout-buttons' ,<br>
-           '#blog-comment-button a' , '#payment-comment-button a' , '#purchase-button a' ,</p>
+           '#blog-comment-button a' , '#payment-comment-button a' , '#purchase-button a'</p>
           
           <h3>Sample code:</h3>
           <code>&lt;a class="button" href="#"&gt;SEE MORE&lt;/a&gt;</code>
@@ -152,7 +152,7 @@
           <p>There are also drop down menus utilized in the website.</p>
           
           <h3>CSS selector:</h3>
-          <p>'form' , 'input' , '.input-wrapper' , 'select', 'label'</p>
+          <p>'form' , 'input' , 'select', 'label' , '.input-wrapper'</p>
           
           <h3>Sample code:</h3>
           <code>&lt;label for="contry"&gt;PROVINCE&lt;/label&gt;
@@ -198,8 +198,7 @@
           <p>Forms are used when users going through the purchase process and have to enter their shipping and billing info.</p>
           
           <h3>CSS selector:</h3>
-          <p>'.checkout-info-form' , '.billing-info-form input' , '.checkout-info-form input' , '.billing-info-form input' ,<br>
-          '.billing-info-form select' , '.check-boxes' , 'select', '.checkout-info-form select' , '.billing-info-form select' , '.shoppingbag-summary select' , '.checkout-info-form select' , 'label'</p>
+          <p>'.checkout-info-form' , '.checkout-info-form input' , '.checkout-info-form select' , '.billing-info-form' , '.billing-info-form input' , '.billing-info-form select' , '.shoppingbag-summary select' , <br>'.check-boxes' , 'select' , 'label'</p>
           
           <h3>Sample code:</h3>
             <code>&lt;form class="checkout-info-form"&gt;
@@ -429,7 +428,7 @@
           <p>As an example, this is what the <strong>navigation bar</strong> would look like on Thoughts On's website.</p>
           
           <h3>CSS selector:</h3>
-          <p>'nav' , 'nav a' , 'nav a:hover' , 'nav a:focus' ,  'nav li img' , 'nav li img:hover' , '.navbar-icons-group' , '.nav-icons' </p>
+          <p>'nav' , 'nav a' , 'nav a:hover' , 'nav a:focus' ,  'nav li img' , 'nav li img:hover' , 'nav li img:focus' , '.navbar-icons-group' , '.nav-icons' </p>
           
           <h3>Sample code:</h3>
 
@@ -501,7 +500,7 @@
           <p>As an example, this is what the <strong>product listing elements</strong> would look like on Thoughts On's website.</p>
           
           <h3>CSS selector:</h3>
-          <p>'product-content p' , 'product-content-image' , 'product-content-text' , 'product-content-image img' , 'product-content-image img a' , 'product-content-image img a:hover' , 'product-content-image img a:focus'</p>
+          <p>'.product-content p' , '.product-content-image' , '.product-content-text' , '.product-content-image img' , '.product-content-image img a:hover' , '.product-content-image img a:focus'</p>
           <h3>Sample code:</h3>
             <code>&lt;div class="product-content&gt;<br>
               <br>&lt;div class="product-content-image"&gt;
@@ -575,8 +574,7 @@
           <p>As an example, this is what the <strong>checkout process bar</strong> would look like on Thoughts On's website.</p>
           
           <h3>CSS selector:</h3>
-          <p>'.checkout-info-form input' , '.checkout-info-form select' , 'billing-info-form input' , 'billing-info-form select' , '.processbar-info-container h3' , <br>
-          'processbar-info-container' , 'processbar-inactive-steps' , '.processbar' , '#processbar-inactive-steps'</p>
+          <p>'.checkout-info-form input' , '.checkout-info-form select' , '.processbar' , '.processbar-info-container' , '.processbar-inactive-steps' , '.processbar-info-container h3' </p>
 
           <h3>Sample code:</h3>
             <code>&lt;div class="processbar-info-container"&gt;
@@ -604,7 +602,7 @@
           <p>Icons will be bounded by circles.</p>
           
           <h3>CSS selector:</h3>
-          <p>'.navbar-icons-group' , '.nav-icons' , '.nav-icons img' , '.nav-icons img:hover' , '' ,</p>
+          <p>'.navbar-icons-group' , '.nav-icons' , '.nav-icons img' , '.nav-icons img:hover' , '.nav-icons img:focus'</p>
           
           <h3>Sample code:</h3>
           <code>&lt;div class="nav-icons-group"&gt;
@@ -625,10 +623,10 @@
           <div class="dotted-separation-lines"><hr></div>
 
           <!-- IMAGES:PICS-->
-          <p>Images (product listing and othes) will be borderless and have right angled corners. Background images with a text overlay with be set at 30% opacity.</p>
+          <p>Images (product listing and othes) will be borderless and have right angled corners.</p>
           
           <h3>CSS selector:</h3>
-          <p>'img' , '.blog-content-image img' , '.bio-content-image img' , '.product-details-content-image img' , 'suggested-product-images img'</p>
+          <p>'img' , '.blog-content-image img' , '.bio-content-image img' , '.product-details-content-image img' , '.suggested-product-images img'</p>
           
           <h3>Sample code:</h3>
           <code>&lt;div class="product-content"&gt;<br>
@@ -637,7 +635,7 @@
             <br> &lt;/div&gt;<br>
             <br>&lt;/div&gt;
           </code>
-          
+
           <h3>Rendered element:</h3>
             <div class="product-image">
               <img src="images/product_listing/candle_mason_jar.jpg" height="200" width="250" alt="product #2: set of</p> 
