@@ -85,7 +85,7 @@ a:hover, a:focus{
   height:758px;
   height: auto;  /* img height adjusts accordingly*/
   max-width: 100%;
-  text-align: center;
+  text-align: justify-center;
   padding: 0 3em 7em 3em;
   vertical-align: top;
   margin-left:-0.25em;
@@ -325,9 +325,9 @@ a.menu-item-selected{
 }
 
 .nav-icons-selected{
-  border: 1px solid #5E3149;
-  width:34px;
-  height:34px;
+  border: 2px solid #5E3149;
+  width:36px;
+  height:36px;
   border-radius: 50%;
 }
 
